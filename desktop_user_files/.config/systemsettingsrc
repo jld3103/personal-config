@@ -1,0 +1,14 @@
+[DownloadDialog Settings]
+
+[KFileDialog Settings]
+detailViewIconSize=16
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[Open-with settings]
+CompletionMode=1
+
+[systemsettings_sidebar_mode]
+HighlightNonDefaultSettings=true

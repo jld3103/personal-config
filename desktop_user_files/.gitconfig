@@ -1,0 +1,11 @@
+[user]
+	email = jld3103yt@gmail.com
+	name = jld3103
+[color]
+	ui = auto
+[core]
+	editor = nano
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main

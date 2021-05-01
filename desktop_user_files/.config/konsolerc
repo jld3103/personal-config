@@ -1,0 +1,12 @@
+StatusBar=Disabled
+
+[Desktop Entry]
+DefaultProfile=Profile 1.profile
+
+[Favorite Profiles]
+Favorites=
+
+[MainWindow]
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+Window-Maximized 768x1024=true

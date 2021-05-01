@@ -1,0 +1,12 @@
+[EmbedSettings]
+embed-application/json=false
+embed-application/x-cd-image=false
+embed-application/x-java-archive=false
+embed-application/x-trash=false
+embed-application/xml=false
+embed-audio/mpeg=false
+embed-audio/vnd.dts=false
+embed-image/png=false
+embed-image/svg+xml=false
+embed-text/x-patch=false
+embed-x-scheme-handler/http=false

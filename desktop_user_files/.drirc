@@ -1,0 +1,11 @@
+<driconf>
+  <device screen="0" driver="radeonsi">
+    <application name="Default">
+      <option name="mesa_glthread" value="true" />
+      <option name="mesa_no_error" value="true" />
+      <option name="radeonsi_assume_no_z_fights" value="true" />
+      <option name="radeonsi_commutative_blend_add" value="true" />
+      <option name="radeonsi_zerovram" value="true" />
+    </application>
+  </device>
+</driconf>

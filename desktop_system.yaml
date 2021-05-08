@@ -11,7 +11,7 @@ exclude_files:
   - /etc/dpkg/
   - /etc/fonts/conf.d/
   - /etc/fstab
-  - /etc/group
+  - /etc/group*
   - /etc/gshadow*
   - /etc/hosts
   - /etc/iptables/
@@ -26,7 +26,7 @@ exclude_files:
   - /etc/multipath/
   - /etc/nvme/
   - /etc/os-release
-  - /etc/passwd
+  - /etc/passwd*
   - /etc/printcap
   - /etc/shadow*
   - /etc/shells
@@ -144,6 +144,7 @@ packages:
   - buho
   - bzip2
   - ccache
+  - chrpath
   - clang
   - cmake
   - coreutils
@@ -154,6 +155,7 @@ packages:
   - curl
   - dart-sdk-dev
   - dhcpcd
+  - diffstat
   - diffutils
   - discord-canary
   - dmidecode
@@ -196,6 +198,7 @@ packages:
   - groff
   - grub
   - grub-hook
+  - gtest
   - gvfs
   - gvfs-afc
   - gvfs-gphoto2
@@ -352,6 +355,7 @@ packages:
   - qemu
   - qemu-arch-extra
   - qemu-user-static-bin
+  - rpcsvc-proto
   - rpm-tools
   - rsync
   - sddm
@@ -386,6 +390,7 @@ packages:
   - usbutils
   - util-linux
   - v4l2loopback-dkms
+  - vim
   - virt-manager
   - virtualbox
   - virtualbox-host-dkms

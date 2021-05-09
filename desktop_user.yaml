@@ -38,7 +38,6 @@ exclude_files:
   - .config/emaildefaults
   - .config/enchant/
   - .config/filezilla/
-  - .config/firebird-emurc
   - .config/flutter/
   - .config/gh/
   - .config/gtk*
@@ -71,7 +70,6 @@ exclude_files:
   - .config/ksmserverrc
   - .config/ksudokurc
   - .config/ksysguardrc
-  - .config/kwalletrc
   - .config/legendary/
   - .config/libaccounts-glib/
   - .config/libreoffice/
@@ -126,7 +124,7 @@ content_filters:
   - .config/*rc: Width .*
   - .config/dolphinrc: ViewPropsTimestamp.*
   - .config/plasma*rc: LaunchCounts.*
-  - .config/plasma-org.kde.plasma.desktop-appletsrc: PreloadWeight=(?!0).*
+  - .config/plasma-org.kde.plasma.desktop-appletsrc: PreloadWeight=.*
   - .config/plasma-org.kde.plasma.desktop-appletsrc: screenMapping.*
   - .config/plasmanotifyrc: Seen.*
   - .config/plasmanotifyrc: Until.*

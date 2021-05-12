@@ -236,6 +236,7 @@ packages:
   - kdenlive
   - kdeplasma-addons
   - keepassxc
+  - kexec-tools
   - kgamma5
   - khotkeys
   - kimageformats
@@ -276,6 +277,7 @@ packages:
   - libva-mesa-driver
   - libva-vdpau-driver
   - linux-firmware
+  - linux-headers
   - linux-xanmod-anbox
   - linux-xanmod-anbox-headers
   - llvm
@@ -292,6 +294,7 @@ packages:
   - milou
   - mingw-w64-gcc
   - mkbootimg-git
+  - mkdtboimg-git
   - mp3info
   - mpv
   - msitools

@@ -57,3 +57,4 @@ x-scheme-handler/mailto=userapp-Thunderbird-I4Y4X0.desktop
 x-scheme-handler/sgnl=signal-desktop.desktop
 x-scheme-handler/tg=userapp-Telegram Desktop-ZLWGW0.desktop
 x-scheme-handler/slack=slack.desktop
+x-scheme-handler/signalcaptcha=signal.desktop

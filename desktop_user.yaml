@@ -70,6 +70,7 @@ exclude_files:
   - .config/ksmserverrc
   - .config/ksudokurc
   - .config/ksysguardrc
+  - .config/kwalletrc
   - .config/legendary/
   - .config/libaccounts-glib/
   - .config/libreoffice/

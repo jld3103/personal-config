@@ -7,6 +7,7 @@ wheel:Vertical;NoModifier=org.kde.switchdesktop
 RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][1]
+ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
 activityId=ff6611f1-9cac-4dfe-b934-c18196ff43c8
 formfactor=0
@@ -358,7 +359,7 @@ plugin=org.kde.plasma.mediacontroller
 
 [Containments][8][Applets][72]
 immutability=1
-plugin=org.kde.plasma.bluetooth
+plugin=org.kde.plasma.keyboardlayout
 
 [Containments][8][Applets][72][Configuration]
 

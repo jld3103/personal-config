@@ -207,6 +207,7 @@ packages:
   - gvfs-smb
   - gwenview
   - gzip
+  - help2man
   - heroic-games-launcher-bin
   - html-xml-utils
   - htop
@@ -248,7 +249,6 @@ packages:
   - kscreenlocker
   - ksshaskpass
   - ksudoku
-  - ksysguard
   - kwallet-pam
   - kwayland-integration
   - kwayland-server

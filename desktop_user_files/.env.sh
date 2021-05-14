@@ -13,7 +13,7 @@ export PATH=$PATH:/opt/appimagetool/usr/bin
 export PATH=$PATH:$HOME/src/osxcross/target/bin
 export PATH=$PATH:$HOME/src/appimagetool/usr/bin
 
-export LC_NUMERIC="en_US.UTF-8"
+#export LC_NUMERIC="en_US.UTF-8"
 export PUB_CACHE=$HOME/.pub-cache
 
 export PATH=$HOME/go/bin/:$PATH

@@ -294,7 +294,6 @@ packages:
   - milou
   - mingw-w64-gcc
   - mkbootimg-git
-  - mkdtboimg-git
   - mp3info
   - mpv
   - msitools
@@ -331,6 +330,7 @@ packages:
   - pigz
   - piper
   - pkgconf
+  - plantuml
   - plasma-browser-integration
   - plasma-desktop
   - plasma-integration

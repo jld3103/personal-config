@@ -146,12 +146,7 @@ Name=Breeze Dark
 XftHintStyle=hintslight
 XftSubPixel=rgb
 dbfile=/home/jld3103/.mozilla/firefox/r5o0sqsy.default/places.sqlite
-fixed=JetBrains Mono,10,-1,5,50,0,0,0,0,0
-font=Roboto,10,-1,5,50,0,0,0,0,0
-menuFont=Roboto,10,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
-smallestReadableFont=Roboto,8,-1,5,50,0,0,0,0,0
-toolBarFont=Roboto,10,-1,5,50,0,0,0,0,0
 widgetStyle=Breeze
 
 [Icons]
@@ -197,7 +192,6 @@ MaximumRemoteSize=0
 [WM]
 activeBackground=49,54,59
 activeBlend=252,252,252
-activeFont=Roboto,10,-1,5,50,0,0,0,0,0
 activeForeground=252,252,252
 inactiveBackground=42,46,50
 inactiveBlend=161,169,177

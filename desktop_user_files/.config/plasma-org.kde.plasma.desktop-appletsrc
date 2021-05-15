@@ -18,8 +18,6 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][1][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
 
 [Containments][1][Configuration]
 
@@ -51,8 +49,6 @@ dateFormat=isoDate
 showSeconds=true
 
 [Containments][2][Applets][18][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
 
 [Containments][2][Applets][19]
 immutability=1
@@ -110,8 +106,6 @@ plugin=org.kde.plasma.systemtray
 SystrayContainmentId=8
 
 [Containments][2][ConfigDialog]
-DialogHeight=83
-DialogWidth=1920
 
 [Containments][2][Configuration]
 
@@ -152,8 +146,6 @@ showSeconds=true
 use24hFormat=2
 
 [Containments][51][Applets][65][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
 
 [Containments][51][Applets][69]
 immutability=1
@@ -162,8 +154,6 @@ plugin=org.kde.plasma.kickerdash
 [Containments][51][Applets][69][Configuration]
 
 [Containments][51][Applets][69][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
 
 [Containments][51][Applets][69][Configuration][General]
 favoritesPortedToKAstats=true
@@ -199,8 +189,6 @@ lowPrioritySensorIds=["cpu/all/processors","cpu/all/cores"]
 totalSensors=["cpu/all/usage"]
 
 [Containments][51][ConfigDialog]
-DialogHeight=83
-DialogWidth=1920
 
 [Containments][51][Configuration]
 
@@ -250,6 +238,9 @@ plugin=org.kde.plasma.volume
 
 [Containments][57][Applets][64][Configuration]
 
+[Containments][57][Applets][64][Configuration][General]
+currentTab=streams
+
 [Containments][57][Applets][67]
 immutability=1
 plugin=org.kde.plasma.battery
@@ -275,8 +266,6 @@ plugin=org.kde.plasma.bluetooth
 [Containments][57][Applets][73][Configuration]
 
 [Containments][57][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
 
 [Containments][57][Configuration]
 
@@ -370,8 +359,6 @@ plugin=org.kde.plasma.printmanager
 [Containments][8][Applets][9][Configuration]
 
 [Containments][8][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
 
 [Containments][8][Configuration]
 

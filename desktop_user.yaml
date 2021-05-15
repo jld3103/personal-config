@@ -11,6 +11,7 @@ exclude_files:
   - .config/KeePassXCrc
   - .config/Kitware/
   - .config/Maui/buho.conf
+  - .config/Maui/index.conf
   - .config/MultiMC5rc
   - .config/QtProject*
   - .config/Signal/
@@ -125,6 +126,7 @@ content_filters:
   - .config/*rc: Width .*
   - .config/dolphinrc: ViewPropsTimestamp.*
   - .config/plasma*rc: LaunchCounts.*
+  - .config/plasma-org.kde.plasma.desktop-appletsrc: Dialog.*=.*
   - .config/plasma-org.kde.plasma.desktop-appletsrc: PreloadWeight=.*
   - .config/plasma-org.kde.plasma.desktop-appletsrc: screenMapping.*
   - .config/plasmanotifyrc: Seen.*
@@ -132,17 +134,24 @@ content_filters:
   - .config/plasmanotifyrc: \[Applications\].*
   - .config/plasmashellrc: ColumnState.*
 files:
-  Pictures/wallpapers/wavy_lines_v01_5120x2880.png: 1000:1000:644
   .bashrc: 1000:1000:644
   .config/MangoHud/MangoHud.conf: 1000:1000:644
+  .config/autostart/discord-canary.desktop: 1000:1000:600
+  .config/autostart/firefox-developer-edition.desktop: 1000:1000:600
+  .config/autostart/io.element.element.desktop: 1000:1000:600
+  .config/autostart/jetbrains-toolbox.desktop: 1000:1000:744
   .config/baloofilerc: 1000:1000:600
+  .config/breezerc: 1000:1000:600
   .config/dolphinrc: 1000:1000:600
   .config/filetypesrc: 1000:1000:600
   .config/htop/htoprc: 1000:1000:644
+  .config/kateschemarc: 1000:1000:600
   .config/kcminputrc: 1000:1000:600
+  .config/kconf_updaterc: 1000:1000:600
   .config/kded5rc: 1000:1000:600
   .config/kdeglobals: 1000:1000:600
   .config/keepassxc/keepassxc.ini: 1000:1000:644
+  .config/kgammarc: 1000:1000:600
   .config/kglobalshortcutsrc: 1000:1000:600
   .config/khotkeysrc: 1000:1000:600
   .config/kiorc: 1000:1000:600
@@ -151,6 +160,7 @@ files:
   .config/krunnerrc: 1000:1000:600
   .config/kscreenlockerrc: 1000:1000:600
   .config/kservicemenurc: 1000:1000:600
+  .config/ksplashrc: 1000:1000:600
   .config/ktimezonedrc: 1000:1000:600
   .config/kwinrc: 1000:1000:600
   .config/kwinrulesrc: 1000:1000:600
@@ -164,6 +174,7 @@ files:
   .config/powermanagementprofilesrc: 1000:1000:600
   .config/procps/toprc: 1000:1000:644
   .config/systemd/user/default.target.wants/yubikey-touch-detector.service: 1000:1000:777
+  .config/systemsettingsrc: 1000:1000:600
   .config/user-dirs.dirs: 1000:1000:600
   .config/user-dirs.locale: 1000:1000:644
   .config/xsettingsd/xsettingsd.conf: 1000:1000:644
@@ -171,9 +182,5 @@ files:
   .drirc: 1000:1000:644
   .env.sh: 1000:1000:644
   .gitconfig: 1000:1000:644
-  .config/ksplashrc: 1000:1000:600
-  .config/kgammarc: 1000:1000:600
-  .config/systemsettingsrc: 1000:1000:600
-  .config/breezerc: 1000:1000:600
-  .config/kateschemarc: 1000:1000:600
-  .config/kconf_updaterc: 1000:1000:600
+  Pictures/wallpapers/wavy_lines_v01_5120x2880.png: 1000:1000:644
+

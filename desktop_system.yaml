@@ -31,7 +31,6 @@ exclude_files:
   - /etc/shadow*
   - /etc/shells
   - /etc/texmf/
-  - /etc/webapps/element/
   - /etc/xml/
 files:
   /etc/NetworkManager/conf.d/dns.conf: 0:0:644
@@ -167,7 +166,7 @@ packages:
   - dtc
   - edk2-ovmf
   - efibootmgr
-  - element-desktop
+  - element-desktop-nightly-bin
   - elisa
   - etcher-bin
   - f2fs-tools
@@ -260,7 +259,6 @@ packages:
   - lib32-libva-mesa-driver
   - lib32-llvm
   - lib32-llvm-libs
-  - lib32-mangohud-git
   - lib32-mesa
   - lib32-mesa-vdpau
   - lib32-vkd3d
@@ -276,8 +274,8 @@ packages:
   - libtool
   - libva-mesa-driver
   - libva-vdpau-driver
+  - libxnvctrl
   - linux-firmware
-  - linux-headers
   - linux-xanmod-anbox
   - linux-xanmod-anbox-headers
   - llvm
@@ -287,7 +285,6 @@ packages:
   - lzip
   - m4
   - make
-  - mangohud-git
   - mesa
   - mesa-vdpau
   - meson
@@ -396,6 +393,7 @@ packages:
   - vim
   - virt-manager
   - virtualbox
+  - virtualbox-ext-oracle
   - virtualbox-host-dkms
   - vkd3d
   - vlc

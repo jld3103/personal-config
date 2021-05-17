@@ -2,7 +2,7 @@ mode: user
 exclude_files:
   - .config/Android Open Source Project/
   - .config/DB Browser for SQLiterc
-  - .config/Element/
+  - .config/Element-Nightly/
   - .config/Firebird Emus/
   - .config/GIMP/
   - .config/Google/
@@ -119,6 +119,7 @@ content_filters:
   - .config/*rc: HDMI.*
   - .config/*rc: Height .*
   - .config/*rc: History.*
+  - .config/*rc: PreloadWeight=.*
   - .config/*rc: Recent Files.*
   - .config/*rc: Recent URLs.*
   - .config/*rc: RestorePositionForNextInstance.*
@@ -127,7 +128,6 @@ content_filters:
   - .config/dolphinrc: ViewPropsTimestamp.*
   - .config/plasma*rc: LaunchCounts.*
   - .config/plasma-org.kde.plasma.desktop-appletsrc: Dialog.*=.*
-  - .config/plasma-org.kde.plasma.desktop-appletsrc: PreloadWeight=.*
   - .config/plasma-org.kde.plasma.desktop-appletsrc: screenMapping.*
   - .config/plasmanotifyrc: Seen.*
   - .config/plasmanotifyrc: Until.*
@@ -136,9 +136,10 @@ content_filters:
 files:
   .bashrc: 1000:1000:644
   .config/MangoHud/MangoHud.conf: 1000:1000:644
+  .config/MangoHud/csgo_linux64.conf: 1000:1000:644
   .config/autostart/discord-canary.desktop: 1000:1000:600
+  .config/autostart/element-desktop-nightly.desktop: 1000:1000:600
   .config/autostart/firefox-developer-edition.desktop: 1000:1000:600
-  .config/autostart/io.element.element.desktop: 1000:1000:600
   .config/autostart/jetbrains-toolbox.desktop: 1000:1000:744
   .config/baloofilerc: 1000:1000:600
   .config/breezerc: 1000:1000:600
@@ -183,4 +184,3 @@ files:
   .env.sh: 1000:1000:644
   .gitconfig: 1000:1000:644
   Pictures/wallpapers/wavy_lines_v01_5120x2880.png: 1000:1000:644
-

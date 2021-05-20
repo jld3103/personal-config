@@ -16,8 +16,6 @@ CompletionMode=1
 [PlasmaRunnerManager]
 pluginWhiteList=desktopsessions,services,places,PowerDevil,calculator,unitconverter,shell,bookmarks,recentdocuments,locations,baloosearch
 
-[PlasmaTransientsConfig]
-
 [PlasmaViews][Panel 127][Defaults]
 thickness=36
 

@@ -147,20 +147,6 @@ use24hFormat=2
 
 [Containments][51][Applets][65][Configuration][ConfigDialog]
 
-[Containments][51][Applets][69]
-immutability=1
-plugin=org.kde.plasma.kickerdash
-
-[Containments][51][Applets][69][Configuration]
-
-[Containments][51][Applets][69][Configuration][ConfigDialog]
-
-[Containments][51][Applets][69][Configuration][General]
-favoritesPortedToKAstats=true
-
-[Containments][51][Applets][69][Shortcuts]
-global=Meta+F1
-
 [Containments][51][Applets][70]
 immutability=1
 plugin=org.kde.plasma.taskmanager
@@ -188,12 +174,24 @@ highPrioritySensorIds=["cpu/all/usage"]
 lowPrioritySensorIds=["cpu/all/processors","cpu/all/cores"]
 totalSensors=["cpu/all/usage"]
 
+[Containments][51][Applets][79]
+immutability=1
+plugin=org.kde.plasma.kickerdash
+
+[Containments][51][Applets][79][Configuration]
+
+[Containments][51][Applets][79][Configuration][General]
+favoritesPortedToKAstats=true
+
+[Containments][51][Applets][79][Shortcuts]
+global=Meta+F1
+
 [Containments][51][ConfigDialog]
 
 [Containments][51][Configuration]
 
 [Containments][51][General]
-AppletOrder=69;70;53;71;56;65
+AppletOrder=79;70;53;71;56;65
 
 [Containments][57]
 activityId=
@@ -237,9 +235,6 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][57][Applets][64][Configuration]
-
-[Containments][57][Applets][64][Configuration][General]
-currentTab=streams
 
 [Containments][57][Applets][67]
 immutability=1

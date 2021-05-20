@@ -86,6 +86,7 @@ exclude_files:
   - .config/plasma-nm
   - .config/plasma-org.kde.plasma.phone-appletsrc
   - .config/plasma.emojierrc
+  - .config/pmbootstrap.cfg
   - .config/powerdevilrc
   - .config/print-manager
   - .config/puddletag/

@@ -141,7 +141,6 @@ History Items[$e]=file:$HOME/VM Shared,file:$HOME/VM Shared,file:$HOME/Videos,fi
 
 [General]
 BrowserApplication=librewolf.desktop
-ColorScheme=BreezeDark
 Name=Breeze Dark
 XftHintStyle=hintslight
 XftSubPixel=rgb
@@ -149,16 +148,12 @@ dbfile=/home/jld3103/.mozilla/firefox/r5o0sqsy.default/places.sqlite
 shadeSortColumn=true
 widgetStyle=Breeze
 
-[Icons]
-Theme=breeze-dark
-
 [KDE]
 ColorScheme=Breeze Dark
 LookAndFeelPackage=org.kde.breezedark.desktop
 ShowDeleteCommand=true
 SingleClick=false
 contrast=4
-widgetStyle=Breeze
 
 [KFileDialog Settings]
 Allow Expansion=false

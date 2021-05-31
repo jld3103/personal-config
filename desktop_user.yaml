@@ -34,6 +34,7 @@ exclude_files:
   - .config/dconf/
   - .config/device_automounter_kcmrc
   - .config/discord*
+  - .config/discoverrc
   - .config/drkonqirc
   - .config/elisarc
   - .config/emaildefaults
@@ -151,6 +152,11 @@ files:
   .config/kcminputrc: 1000:1000:600
   .config/kconf_updaterc: 1000:1000:600
   .config/kded5rc: 1000:1000:600
+  .config/kdedefaults/kcminputrc: 1000:1000:600
+  .config/kdedefaults/kdeglobals: 1000:1000:600
+  .config/kdedefaults/kscreenlockerrc: 1000:1000:600
+  .config/kdedefaults/kwinrc: 1000:1000:600
+  .config/kdedefaults/plasmarc: 1000:1000:600
   .config/kdeglobals: 1000:1000:600
   .config/keepassxc/keepassxc.ini: 1000:1000:644
   .config/kgammarc: 1000:1000:600
@@ -179,6 +185,7 @@ files:
   .config/systemsettingsrc: 1000:1000:600
   .config/user-dirs.dirs: 1000:1000:600
   .config/user-dirs.locale: 1000:1000:644
+  .config/xdg-desktop-portal-kderc: 1000:1000:600
   .config/xsettingsd/xsettingsd.conf: 1000:1000:644
   .config/yubikey-touch-detector/service.conf: 1000:1000:644
   .drirc: 1000:1000:644

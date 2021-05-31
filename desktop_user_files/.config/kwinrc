@@ -46,11 +46,6 @@ Enabled=true
 BorderActivate=
 Enabled=true
 
-[TabBox]
-DesktopLayout=org.kde.breeze.desktop
-DesktopListLayout=org.kde.breeze.desktop
-LayoutName=org.kde.breeze.desktop
-
 [Windows]
 ActiveMouseScreen=true
 Placement=Centered

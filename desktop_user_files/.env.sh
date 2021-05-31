@@ -37,3 +37,5 @@ export _localmodcfg=n
 
 export USE_CCACHE=1
 export CCACHE_COMPRESS=1
+
+export CHROME_EXECUTABLE=chromium

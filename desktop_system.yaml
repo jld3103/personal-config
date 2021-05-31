@@ -67,7 +67,6 @@ files:
   /etc/systemd/system/display-manager.service: 0:0:777
   /etc/systemd/system/getty.target.wants/getty@tty1.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/NetworkManager.service: 0:0:777
-  /etc/systemd/system/multi-user.target.wants/anbox-container-manager.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/apparmor.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/cpupower.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/cronie.service: 0:0:777
@@ -77,6 +76,7 @@ files:
   /etc/systemd/system/multi-user.target.wants/named.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/remote-fs.target: 0:0:777
   /etc/systemd/system/multi-user.target.wants/systemd-networkd.service: 0:0:777
+  /etc/systemd/system/network-online.target.wants/NetworkManager-wait-online.service: 0:0:777
   /etc/systemd/system/sockets.target.wants/cups.socket: 0:0:777
   /etc/systemd/system/sockets.target.wants/docker.socket: 0:0:777
   /etc/systemd/system/sockets.target.wants/libvirtd-ro.socket: 0:0:777
@@ -143,9 +143,11 @@ packages:
   - buho
   - bzip2
   - ccache
+  - chromium
   - chrpath
-  - clang
+  - clang-git
   - cmake
+  - compiler-rt-git
   - coreutils
   - cpio
   - cpupower
@@ -157,6 +159,7 @@ packages:
   - diffstat
   - diffutils
   - discord-canary
+  - discover
   - dmidecode
   - docker
   - dolphin
@@ -219,7 +222,9 @@ packages:
   - inkscape
   - ipp-usb
   - iproute2
+  - iptables-nft
   - iputils
+  - java-openjdk-bin
   - jdk8-openjdk
   - jetbrains-toolbox
   - jq
@@ -255,16 +260,15 @@ packages:
   - kwrited
   - less
   - lib32-gamemode
-  - lib32-libdrm
-  - lib32-libva-mesa-driver
-  - lib32-llvm
-  - lib32-llvm-libs
-  - lib32-mesa
-  - lib32-mesa-vdpau
+  - lib32-libdrm-git
+  - lib32-llvm-git
+  - lib32-llvm-libs-git
+  - lib32-mesa-git
   - lib32-vkd3d
-  - lib32-vulkan-radeon
+  - lib32-vulkan-radeon-git
   - libavresample
-  - libdrm
+  - libdrm-git
+  - libdwarf
   - libfido2
   - libicns
   - libkscreen
@@ -272,21 +276,18 @@ packages:
   - libreoffice-fresh
   - libreoffice-fresh-de
   - libtool
-  - libva-mesa-driver
   - libva-vdpau-driver
   - libxnvctrl
   - linux-firmware
   - linux-xanmod-anbox
   - linux-xanmod-anbox-headers
-  - llvm
-  - llvm-libs
+  - llvm-git
+  - llvm-libs-git
   - logrotate
   - lxc
   - lzip
   - m4
   - make
-  - mesa
-  - mesa-vdpau
   - meson
   - milou
   - mingw-w64-gcc
@@ -319,6 +320,7 @@ packages:
   - openssh
   - oxygen
   - p7zip
+  - packagekit-qt5
   - pacman
   - pam-u2f
   - patch
@@ -400,7 +402,7 @@ packages:
   - virtualbox-host-dkms
   - vkd3d
   - vlc
-  - vulkan-radeon
+  - vulkan-radeon-git
   - wget
   - which
   - wine
@@ -410,7 +412,7 @@ packages:
   - xdg-desktop-portal-kde
   - xdg-user-dirs
   - xf86-input-libinput
-  - xf86-video-amdgpu
+  - xf86-video-amdgpu-git
   - xmlto
   - xorg-fonts-100dpi
   - xorg-fonts-75dpi

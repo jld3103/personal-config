@@ -17,13 +17,18 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
+[Containments][1][Applets][81][Configuration][SensorColors]
+cpu/all/usage=61,174,233
+
 [Containments][1][ConfigDialog]
 
 [Containments][1][Configuration]
 
 [Containments][1][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=586
+ToolBoxButtonX=577
+positions=5,17,desktop:/50-headset.rules,1,0,desktop:/venji10.txt,0,16,desktop:/work.sh,4,0,desktop:/push-forward.sh,0,13,desktop:/passwords.kdbx,0,12,desktop:/sound-fix.sh,0,15,desktop:/shush.sh,0,14,desktop:/food_rescue_search.txt,0,9,desktop:/data.tar.gz,0,8,desktop:/matrix-forward.sh,0,11,desktop:/log.out,0,10,desktop:/anbox-setup.sh,0,5,desktop:/world_nether,0,4,desktop:/backup.tar.gz,0,7,desktop:/audio-forward.sh,0,6,desktop:/mc,0,1,desktop:/csgo,0,0,desktop:/world,0,3,desktop:/oehl,0,2
+sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
 Image=file:///home/jld3103/Pictures/wallpapers/wavy_lines_v01_5120x2880.png
@@ -154,25 +159,7 @@ plugin=org.kde.plasma.taskmanager
 [Containments][51][Applets][70][Configuration]
 
 [Containments][51][Applets][70][Configuration][General]
-launchers=applications:org.kde.dolphin.desktop,applications:firefox-developer-edition.desktop,applications:org.kde.konsole.desktop
-
-[Containments][51][Applets][71]
-immutability=1
-plugin=org.kde.plasma.systemmonitor
-
-[Containments][51][Applets][71][Configuration]
-
-[Containments][51][Applets][71][Configuration][Appearance]
-chartFace=org.kde.ksysguard.piechart
-title=Total CPU Use
-
-[Containments][51][Applets][71][Configuration][SensorColors]
-cpu/all/usage=61,174,233
-
-[Containments][51][Applets][71][Configuration][Sensors]
-highPrioritySensorIds=["cpu/all/usage"]
-lowPrioritySensorIds=["cpu/all/processors","cpu/all/cores"]
-totalSensors=["cpu/all/usage"]
+launchers=applications:firefox-developer-edition.desktop,applications:org.kde.konsole.desktop
 
 [Containments][51][Applets][79]
 immutability=1
@@ -186,12 +173,30 @@ favoritesPortedToKAstats=true
 [Containments][51][Applets][79][Shortcuts]
 global=Meta+F1
 
+[Containments][51][Applets][81]
+immutability=1
+plugin=org.kde.plasma.systemmonitor
+
+[Containments][51][Applets][81][Configuration]
+
+[Containments][51][Applets][81][Configuration][Appearance]
+chartFace=org.kde.ksysguard.piechart
+title=Total CPU Use
+
+[Containments][51][Applets][81][Configuration][SensorColors]
+cpu/all/usage=61,174,233
+
+[Containments][51][Applets][81][Configuration][Sensors]
+highPrioritySensorIds=["cpu/all/usage"]
+lowPrioritySensorIds=["cpu/all/processors","cpu/all/cores"]
+totalSensors=["cpu/all/usage"]
+
 [Containments][51][ConfigDialog]
 
 [Containments][51][Configuration]
 
 [Containments][51][General]
-AppletOrder=79;70;53;71;56;65
+AppletOrder=79;70;53;81;56;65
 
 [Containments][57]
 activityId=
@@ -360,6 +365,9 @@ plugin=org.kde.plasma.printmanager
 [Containments][8][General]
 extraItems=org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.bluetooth
 knownItems=org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.bluetooth
+
+[Containments51Appletsts][81][Configuration][Appearance]
+title=Total CPU Use
 
 [ScreenMapping]
 itemsOnDisabledScreens=

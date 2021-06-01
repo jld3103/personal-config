@@ -136,8 +136,7 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=840,596
-History Items[$e]=file:$HOME/VM Shared,file:$HOME/VM Shared,file:$HOME/Videos,file:$HOME/Games/lineage-17/kernel,file:$HOME/Games/lineage-17/device
+DirSelectDialog Size=844,598
 
 [General]
 BrowserApplication=librewolf.desktop

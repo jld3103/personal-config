@@ -32,6 +32,7 @@ exclude_files:
   - /etc/shells
   - /etc/texmf/
   - /etc/xml/
+  - /etc/rancher/
 files:
   /etc/NetworkManager/conf.d/dns.conf: 0:0:644
   /etc/X11/xorg.conf.d/00-keyboard.conf: 0:0:644
@@ -194,6 +195,7 @@ packages:
   - gnome-desktop
   - gnuplot
   - go
+  - google-cloud-sdk
   - google-earth-pro
   - gparted
   - grep
@@ -230,6 +232,8 @@ packages:
   - jq
   - jre8-openjdk
   - jre8-openjdk-headless
+  - k3s-bin
+  - k9s
   - kactivitymanagerd
   - kate
   - kcalc
@@ -253,6 +257,7 @@ packages:
   - kscreenlocker
   - ksshaskpass
   - ksudoku
+  - kubectl
   - kwallet-pam
   - kwayland-integration
   - kwayland-server
@@ -382,6 +387,7 @@ packages:
   - tcpdump
   - telegram-desktop
   - terminus-font
+  - terraform
   - texinfo
   - texlive-core
   - texlive-latexextra
@@ -402,6 +408,7 @@ packages:
   - virtualbox-host-dkms
   - vkd3d
   - vlc
+  - vscodium-bin
   - vulkan-radeon-git
   - wget
   - which

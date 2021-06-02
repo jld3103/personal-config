@@ -1,9 +1,5 @@
-[DownloadDialog Settings]
-
 [KFileDialog Settings]
 detailViewIconSize=16
-
-[KPropertiesDialog]
 
 [MainWindow]
 MenuBar=Disabled

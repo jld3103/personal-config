@@ -139,6 +139,10 @@ files:
   .bashrc: 1000:1000:644
   .config/MangoHud/MangoHud.conf: 1000:1000:644
   .config/MangoHud/csgo_linux64.conf: 1000:1000:644
+  .config/autostart/discord-canary.desktop: 1000:1000:600
+  .config/autostart/element-desktop-nightly.desktop: 1000:1000:600
+  .config/autostart/firefox-developer-edition.desktop: 1000:1000:600
+  .config/autostart/jetbrains-toolbox.desktop: 1000:1000:600
   .config/baloofilerc: 1000:1000:600
   .config/breezerc: 1000:1000:600
   .config/dolphinrc: 1000:1000:600

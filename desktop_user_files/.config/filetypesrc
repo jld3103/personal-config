@@ -2,6 +2,7 @@
 embed-application/json=false
 embed-application/x-cd-image=false
 embed-application/x-java-archive=false
+embed-application/x-raw-disk-image=false
 embed-application/x-trash=false
 embed-application/xml=false
 embed-audio/mpeg=false

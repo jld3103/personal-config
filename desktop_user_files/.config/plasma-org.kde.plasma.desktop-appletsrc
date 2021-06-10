@@ -20,14 +20,13 @@ wallpaperplugin=org.kde.image
 [Containments][1][Applets][81][Configuration][SensorColors]
 cpu/all/usage=61,174,233
 
-[Containments][1][ConfigDialog]
-
 [Containments][1][Configuration]
+PreloadWeight=0
 
 [Containments][1][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=577
-positions=5,17,desktop:/50-headset.rules,1,0,desktop:/venji10.txt,0,16,desktop:/work.sh,4,0,desktop:/push-forward.sh,0,13,desktop:/passwords.kdbx,0,12,desktop:/sound-fix.sh,0,15,desktop:/shush.sh,0,14,desktop:/food_rescue_search.txt,0,9,desktop:/data.tar.gz,0,8,desktop:/matrix-forward.sh,0,11,desktop:/log.out,0,10,desktop:/anbox-setup.sh,0,5,desktop:/world_nether,0,4,desktop:/backup.tar.gz,0,7,desktop:/audio-forward.sh,0,6,desktop:/mc,0,1,desktop:/csgo,0,0,desktop:/world,0,3,desktop:/oehl,0,2
+positions=2,17,desktop:/matrix-forward.sh,0,11,desktop:/passwords.kdbx,0,12,desktop:/push-forward.sh,0,13,desktop:/shush.sh,0,14,desktop:/sound-fix.sh,0,15,desktop:/csgo,0,0,desktop:/mc,0,1,desktop:/oehl,0,2,desktop:/world,0,3,desktop:/world_nether,0,4,desktop:/anbox-setup.sh,0,5,desktop:/audio-forward.sh,0,6,desktop:/backup.tar.gz,0,7,desktop:/venji10.txt,0,16,desktop:/50-headset.rules,1,0,desktop:/data.tar.gz,0,8,desktop:/food_rescue_search.txt,0,9,desktop:/log.out,0,10
 sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
@@ -48,24 +47,25 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][18][Configuration]
+PreloadWeight=0
 
 [Containments][2][Applets][18][Configuration][Appearance]
 dateFormat=isoDate
 showSeconds=true
-
-[Containments][2][Applets][18][Configuration][ConfigDialog]
 
 [Containments][2][Applets][19]
 immutability=1
 plugin=org.kde.plasma.showdesktop
 
 [Containments][2][Applets][19][Configuration]
+PreloadWeight=0
 
 [Containments][2][Applets][22]
 immutability=1
 plugin=org.kde.plasma.kickerdash
 
 [Containments][2][Applets][22][Configuration]
+PreloadWeight=0
 
 [Containments][2][Applets][22][Configuration][General]
 favoritesPortedToKAstats=true
@@ -75,6 +75,7 @@ immutability=1
 plugin=org.kde.plasma.systemmonitor
 
 [Containments][2][Applets][23][Configuration]
+PreloadWeight=0
 
 [Containments][2][Applets][23][Configuration][Appearance]
 chartFace=org.kde.ksysguard.piechart
@@ -93,6 +94,7 @@ immutability=1
 plugin=org.kde.plasma.taskmanager
 
 [Containments][2][Applets][25][Configuration]
+PreloadWeight=0
 
 [Containments][2][Applets][25][Configuration][General]
 launchers=
@@ -102,17 +104,18 @@ immutability=1
 plugin=org.kde.plasma.pager
 
 [Containments][2][Applets][4][Configuration]
+PreloadWeight=0
 
 [Containments][2][Applets][7]
 immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][2][Applets][7][Configuration]
+PreloadWeight=0
 SystrayContainmentId=8
 
-[Containments][2][ConfigDialog]
-
 [Containments][2][Configuration]
+PreloadWeight=0
 
 [Containments][2][General]
 AppletOrder=22;4;25;23;7;18;19
@@ -131,12 +134,14 @@ immutability=1
 plugin=org.kde.plasma.pager
 
 [Containments][51][Applets][53][Configuration]
+PreloadWeight=0
 
 [Containments][51][Applets][56]
 immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][51][Applets][56][Configuration]
+PreloadWeight=60
 SystrayContainmentId=57
 
 [Containments][51][Applets][65]
@@ -144,19 +149,19 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][51][Applets][65][Configuration]
+PreloadWeight=0
 
 [Containments][51][Applets][65][Configuration][Appearance]
 dateFormat=isoDate
 showSeconds=true
 use24hFormat=2
 
-[Containments][51][Applets][65][Configuration][ConfigDialog]
-
 [Containments][51][Applets][70]
 immutability=1
 plugin=org.kde.plasma.taskmanager
 
 [Containments][51][Applets][70][Configuration]
+PreloadWeight=0
 
 [Containments][51][Applets][70][Configuration][General]
 launchers=applications:firefox-developer-edition.desktop,applications:org.kde.konsole.desktop
@@ -166,6 +171,9 @@ immutability=1
 plugin=org.kde.plasma.kickerdash
 
 [Containments][51][Applets][79][Configuration]
+PreloadWeight=0
+
+[Containments][51][Applets][79][Configuration][ConfigDialog]
 
 [Containments][51][Applets][79][Configuration][General]
 favoritesPortedToKAstats=true
@@ -178,6 +186,7 @@ immutability=1
 plugin=org.kde.plasma.systemmonitor
 
 [Containments][51][Applets][81][Configuration]
+PreloadWeight=0
 
 [Containments][51][Applets][81][Configuration][Appearance]
 chartFace=org.kde.ksysguard.piechart
@@ -191,9 +200,11 @@ highPrioritySensorIds=["cpu/all/usage"]
 lowPrioritySensorIds=["cpu/all/processors","cpu/all/cores"]
 totalSensors=["cpu/all/usage"]
 
-[Containments][51][ConfigDialog]
+[Containments][51][Applets][83][Configuration]
+PreloadWeight=76
 
 [Containments][51][Configuration]
+PreloadWeight=0
 
 [Containments][51][General]
 AppletOrder=79;70;53;81;56;65
@@ -212,62 +223,63 @@ immutability=1
 plugin=org.kde.plasma.printmanager
 
 [Containments][57][Applets][58][Configuration]
+PreloadWeight=0
 
 [Containments][57][Applets][59]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][57][Applets][59][Configuration]
-
-[Containments][57][Applets][60][Configuration]
+PreloadWeight=60
 
 [Containments][57][Applets][61]
 immutability=1
 plugin=org.kde.plasma.keyboardindicator
 
 [Containments][57][Applets][61][Configuration]
-
-[Containments][57][Applets][62][Configuration]
+PreloadWeight=0
 
 [Containments][57][Applets][63]
 immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][57][Applets][63][Configuration]
+PreloadWeight=0
 
 [Containments][57][Applets][64]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][57][Applets][64][Configuration]
+PreloadWeight=0
 
 [Containments][57][Applets][67]
 immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][57][Applets][67][Configuration]
+PreloadWeight=0
 
 [Containments][57][Applets][68]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][57][Applets][68][Configuration]
+PreloadWeight=0
 
 [Containments][57][Applets][71]
 immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][57][Applets][71][Configuration]
+PreloadWeight=0
 
 [Containments][57][Applets][73]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
-[Containments][57][Applets][73][Configuration]
-
-[Containments][57][ConfigDialog]
-
 [Containments][57][Configuration]
+PreloadWeight=0
 
 [Containments][57][General]
 extraItems=org.kde.plasma.printmanager,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.bluetooth
@@ -287,80 +299,81 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][8][Applets][10][Configuration]
-
-[Containments][8][Applets][11][Configuration]
+PreloadWeight=0
 
 [Containments][8][Applets][12]
 immutability=1
 plugin=org.kde.plasma.keyboardindicator
 
 [Containments][8][Applets][12][Configuration]
+PreloadWeight=0
 
 [Containments][8][Applets][13]
 immutability=1
 plugin=org.kde.kdeconnect
-
-[Containments][8][Applets][13][Configuration]
 
 [Containments][8][Applets][14]
 immutability=1
 plugin=org.kde.plasma.nightcolorcontrol
 
 [Containments][8][Applets][14][Configuration]
+PreloadWeight=0
 
 [Containments][8][Applets][15]
 immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][8][Applets][15][Configuration]
+PreloadWeight=0
 
 [Containments][8][Applets][16]
 immutability=1
 plugin=org.kde.plasma.vault
-
-[Containments][8][Applets][16][Configuration]
 
 [Containments][8][Applets][17]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][8][Applets][17][Configuration]
+PreloadWeight=0
 
 [Containments][8][Applets][20]
 immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][8][Applets][20][Configuration]
+PreloadWeight=0
 
 [Containments][8][Applets][21]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][21][Configuration]
+PreloadWeight=0
 
 [Containments][8][Applets][24]
 immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][8][Applets][24][Configuration]
-
-[Containments][8][Applets][51][Configuration]
+PreloadWeight=0
 
 [Containments][8][Applets][72]
 immutability=1
 plugin=org.kde.plasma.keyboardlayout
 
 [Containments][8][Applets][72][Configuration]
+PreloadWeight=26
 
 [Containments][8][Applets][9]
 immutability=1
 plugin=org.kde.plasma.printmanager
 
 [Containments][8][Applets][9][Configuration]
-
-[Containments][8][ConfigDialog]
+PreloadWeight=0
 
 [Containments][8][Configuration]
+PreloadWeight=0
 
 [Containments][8][General]
 extraItems=org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.bluetooth

@@ -104,6 +104,7 @@ files:
   /etc/tmpfiles.d/anbox.conf: 0:0:644
   /etc/vconsole.conf: 0:0:644
 packages:
+  - 1password-cli
   - aarch64-linux-gnu-gcc
   - aarch64-linux-gnu-pkg-config
   - abootimg-git
@@ -117,6 +118,7 @@ packages:
   - anbox-git
   - anbox-image-gapps-rooted
   - android-udev
+  - ansible
   - apparmor
   - appimagetool-continuous
   - arch-install-scripts
@@ -132,6 +134,7 @@ packages:
   - base
   - bash
   - bash-completion
+  - bashtop
   - bind
   - binfmt-qemu-static-all-arch
   - binutils
@@ -191,8 +194,10 @@ packages:
   - gimp
   - git
   - github-cli
+  - gitlab-runner
   - glibc
   - gnome-desktop
+  - gnome-keyring
   - gnuplot
   - go
   - google-cloud-sdk
@@ -211,6 +216,7 @@ packages:
   - gvfs-smb
   - gwenview
   - gzip
+  - helm
   - help2man
   - heroic-games-launcher-bin
   - html-xml-utils
@@ -222,6 +228,7 @@ packages:
   - imagewriter
   - inetutils
   - inkscape
+  - iotop
   - ipp-usb
   - iproute2
   - iptables-nft
@@ -293,6 +300,7 @@ packages:
   - lzip
   - m4
   - make
+  - mdbook
   - meson
   - milou
   - mingw-w64-gcc
@@ -366,11 +374,14 @@ packages:
   - rpcsvc-proto
   - rpm-tools
   - rsync
+  - samba
+  - scrcpy-git
   - sddm
   - sddm-kcm
   - sed
   - signal-desktop
   - simg-tools
+  - skaffold
   - slack-desktop
   - spectacle
   - spotify
@@ -394,6 +405,7 @@ packages:
   - thunderbird
   - thunderbird-i18n-de
   - thunderbird-i18n-en-us
+  - tigervnc
   - tree
   - ttf-liberation
   - uboot-tools
@@ -427,7 +439,7 @@ packages:
   - xorg-xkill
   - xz
   - yarn
-  - yay
+  - yay-bin
   - youtube-dl
   - yq
   - yubico-pam

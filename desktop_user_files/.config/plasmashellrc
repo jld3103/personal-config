@@ -1,14 +1,8 @@
-[ActionsWidget]
-
-[ConfigDialog]
-
 [General]
 Number of Actions=0
 
 [KFileDialog Settings]
 detailViewIconSize=16
-
-[KPropertiesDialog]
 
 [Open-with settings]
 CompletionMode=1

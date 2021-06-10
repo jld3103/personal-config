@@ -135,8 +135,6 @@ content_filters:
   - .config/plasmashellrc: ColumnState.*
 files:
   .bashrc: 1000:1000:644
-  .config/MangoHud/MangoHud.conf: 1000:1000:644
-  .config/MangoHud/csgo_linux64.conf: 1000:1000:644
   .config/autostart/discord-canary.desktop: 1000:1000:600
   .config/autostart/element-desktop-nightly.desktop: 1000:1000:600
   .config/autostart/firefox-developer-edition.desktop: 1000:1000:600
@@ -171,6 +169,8 @@ files:
   .config/kwinrc: 1000:1000:600
   .config/kwinrulesrc: 1000:1000:600
   .config/kxkbrc: 1000:1000:600
+  .config/MangoHud/csgo_linux64.conf: 1000:1000:644
+  .config/MangoHud/MangoHud.conf: 1000:1000:644
   .config/mimeapps.list: 1000:1000:644
   .config/plasma-localerc: 1000:1000:600
   .config/plasma-org.kde.plasma.desktop-appletsrc: 1000:1000:600
@@ -183,6 +183,7 @@ files:
   .config/systemsettingsrc: 1000:1000:600
   .config/user-dirs.dirs: 1000:1000:600
   .config/user-dirs.locale: 1000:1000:644
+  .config/VSCodium/User/settings.json: 1000:1000:644
   .config/xdg-desktop-portal-kderc: 1000:1000:600
   .config/xsettingsd/xsettingsd.conf: 1000:1000:644
   .config/yubikey-touch-detector/service.conf: 1000:1000:644

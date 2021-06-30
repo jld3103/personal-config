@@ -1,4 +1,5 @@
 {
     "editor.formatOnSave": true,
-    "window.zoomLevel": 0.325
+    "window.zoomLevel": 0.325,
+    "explorer.autoReveal": false
 }

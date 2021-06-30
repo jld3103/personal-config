@@ -34,15 +34,15 @@ exclude_files:
   - /etc/xml/
   - /etc/rancher/
 files:
-  /etc/NetworkManager/conf.d/dns.conf: 0:0:644
-  /etc/X11/xorg.conf.d/00-keyboard.conf: 0:0:644
-  /etc/X11/xorg.conf.d/20-amdgpu.conf: 0:0:644
+  /etc/systemd/user/pipewire.service.wants/pipewire-media-session.service: 0:0:777
+  /etc/systemd/user/sockets.target.wants/pipewire-pulse.socket: 0:0:777
   /etc/default/cpupower: 0:0:644
   /etc/default/grub: 0:0:644
   /etc/default/keyboard: 0:0:644
   /etc/default/locale: 0:0:644
   /etc/fwupd/remotes.d/lvfs-testing.conf: 0:0:644
   /etc/fwupd/remotes.d/vendor-directory.conf: 0:0:644
+  /etc/locale.conf: 0:0:644
   /etc/logrotate.conf: 0:0:644
   /etc/makepkg.conf: 0:0:644
   /etc/mkinitcpio.conf: 0:0:644
@@ -50,10 +50,10 @@ files:
   /etc/modprobe.d/nobeep.conf: 0:0:644
   /etc/modules-load.d/cpufreq.conf: 0:0:644
   /etc/named.conf: 0:40:640
+  /etc/NetworkManager/conf.d/dns.conf: 0:0:644
   /etc/pacman.conf: 0:0:644
   /etc/pacman.d/mirrorlist: 0:0:644
   /etc/pam.d/system-auth: 0:0:644
-  /etc/pulse/daemon.conf: 0:0:644
   /etc/resolv.conf: 0:0:644
   /etc/sddm.conf.d/kde_settings.conf: 0:0:644
   /etc/sudoers.d/wheel: 0:0:440
@@ -67,7 +67,6 @@ files:
   /etc/systemd/system/dbus-org.freedesktop.timesync1.service: 0:0:777
   /etc/systemd/system/display-manager.service: 0:0:777
   /etc/systemd/system/getty.target.wants/getty@tty1.service: 0:0:777
-  /etc/systemd/system/multi-user.target.wants/NetworkManager.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/apparmor.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/cpupower.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/cronie.service: 0:0:777
@@ -75,6 +74,7 @@ files:
   /etc/systemd/system/multi-user.target.wants/libvirtd.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/lm_sensors.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/named.service: 0:0:777
+  /etc/systemd/system/multi-user.target.wants/NetworkManager.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/remote-fs.target: 0:0:777
   /etc/systemd/system/multi-user.target.wants/systemd-networkd.service: 0:0:777
   /etc/systemd/system/network-online.target.wants/NetworkManager-wait-online.service: 0:0:777
@@ -99,11 +99,23 @@ files:
   /etc/systemd/user/sockets.target.wants/gpg-agent.socket: 0:0:777
   /etc/systemd/user/sockets.target.wants/p11-kit-server.socket: 0:0:777
   /etc/systemd/user/sockets.target.wants/pipewire.socket: 0:0:777
-  /etc/systemd/user/sockets.target.wants/pulseaudio.socket: 0:0:777
   /etc/timezone: 0:0:644
   /etc/tmpfiles.d/anbox.conf: 0:0:644
   /etc/vconsole.conf: 0:0:644
+  /etc/X11/xorg.conf.d/00-keyboard.conf: 0:0:644
+  /etc/X11/xorg.conf.d/20-amdgpu.conf: 0:0:644
 packages:
+  - apgdiff-git
+  - aria2
+  - bash-language-server
+  - cdrtools
+  - kate-git
+  - migrate
+  - ngrok-bin
+  - noisetorch-bin
+  - pgmodeler
+  - pipewire-pulse
+  - xournalpp
   - 1password-cli
   - aarch64-linux-gnu-gcc
   - aarch64-linux-gnu-pkg-config
@@ -117,6 +129,7 @@ packages:
   - amd-ucode
   - anbox-git
   - anbox-image-gapps-rooted
+  - android-tools
   - android-udev
   - ansible
   - apparmor
@@ -128,6 +141,7 @@ packages:
   - arm-none-eabi-gcc
   - aspell-de
   - aspell-en
+  - atomicparsley
   - audacity
   - autoconf
   - automake
@@ -196,8 +210,10 @@ packages:
   - github-cli
   - gitlab-runner
   - glibc
+  - gnome-characters
   - gnome-desktop
   - gnome-keyring
+  - gnu-netcat
   - gnuplot
   - go
   - google-cloud-sdk
@@ -235,14 +251,12 @@ packages:
   - iputils
   - java-openjdk-bin
   - jdk8-openjdk
-  - jetbrains-toolbox
   - jq
   - jre8-openjdk
   - jre8-openjdk-headless
   - k3s-bin
   - k9s
   - kactivitymanagerd
-  - kate
   - kcalc
   - kde-cli-tools
   - kde-gtk-config
@@ -357,7 +371,6 @@ packages:
   - powerdevil
   - print-manager
   - puddletag-git
-  - pulseaudio
   - pv
   - pwgen
   - python
@@ -380,7 +393,6 @@ packages:
   - sddm-kcm
   - sed
   - signal-desktop
-  - simg-tools
   - skaffold
   - slack-desktop
   - spectacle
@@ -435,6 +447,7 @@ packages:
   - xmlto
   - xorg-fonts-100dpi
   - xorg-fonts-75dpi
+  - xorg-xfd
   - xorg-xinit
   - xorg-xkill
   - xz

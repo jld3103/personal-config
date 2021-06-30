@@ -1,0 +1,8 @@
+Threshold = 75
+DisplayMonitorSources = false
+EnableUpdates = true
+GuiltTripped = true
+FilterInput = true
+FilterOutput = false
+LastUsedInput = "alsa_input.usb-C-Media_Electronics_Inc._HS70_BLUETOOTH_Gaming_Headset-00.mono-fallback"
+LastUsedOutput = ""

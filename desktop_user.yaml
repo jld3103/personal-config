@@ -1,5 +1,6 @@
 mode: user
 exclude_files:
+  - .config/*.code-workspace
   - .config/aconfmgr/
   - .config/akregatorrc
   - .config/Android Open Source Project/
@@ -19,6 +20,7 @@ exclude_files:
   - .config/Element-Nightly/
   - .config/elisarc
   - .config/emaildefaults
+  - .config/emailidentities
   - .config/enchant/
   - .config/filezilla/
   - .config/Firebird Emus/
@@ -33,7 +35,6 @@ exclude_files:
   - .config/heroic/
   - .config/imagewriterrc
   - .config/inkscape/
-  - .config/JetBrains/
   - .config/jgit/
   - .config/kactivitymanagerd-statsrc
   - .config/kactivitymanagerd-switcher
@@ -76,6 +77,7 @@ exclude_files:
   - .config/okularrc
   - .config/org.kde.gwenviewrc
   - .config/pipewire-media-session/
+  - .config/pipewire/
   - .config/plasma-nm
   - .config/plasma-org.kde.plasma.phone-appletsrc
   - .config/plasma.emojierrc
@@ -107,6 +109,7 @@ exclude_files:
   - .config/yarn/
   - .config/Yubico/
   - .config/zoom*
+  - .emulator_console_auth_token
   - .face*
   - .flutter*
   - .fonts.conf
@@ -138,7 +141,6 @@ files:
   .config/autostart/discord-canary.desktop: 1000:1000:600
   .config/autostart/element-desktop-nightly.desktop: 1000:1000:600
   .config/autostart/firefox-developer-edition.desktop: 1000:1000:600
-  .config/autostart/jetbrains-toolbox.desktop: 1000:1000:600
   .config/baloofilerc: 1000:1000:600
   .config/breezerc: 1000:1000:600
   .config/dolphinrc: 1000:1000:600
@@ -167,11 +169,11 @@ files:
   .config/ksplashrc: 1000:1000:600
   .config/ktimezonedrc: 1000:1000:600
   .config/kwinrc: 1000:1000:600
-  .config/kwinrulesrc: 1000:1000:600
   .config/kxkbrc: 1000:1000:600
   .config/MangoHud/csgo_linux64.conf: 1000:1000:644
   .config/MangoHud/MangoHud.conf: 1000:1000:644
   .config/mimeapps.list: 1000:1000:644
+  .config/noisetorch/config.toml: 1000:1000:644
   .config/plasma-localerc: 1000:1000:600
   .config/plasma-org.kde.plasma.desktop-appletsrc: 1000:1000:600
   .config/plasmanotifyrc: 1000:1000:600

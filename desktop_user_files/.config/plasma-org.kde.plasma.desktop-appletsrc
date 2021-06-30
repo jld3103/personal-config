@@ -28,7 +28,7 @@ PreloadWeight=0
 [Containments][1][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=577
-positions=2,17,desktop:/venji10.txt,0,16,desktop:/50-headset.rules,1,0,desktop:/csgo,0,0,desktop:/mc,0,1,desktop:/oehl,0,2,desktop:/world,0,3,desktop:/world_nether,0,4,desktop:/anbox-setup.sh,0,5,desktop:/audio-forward.sh,0,6,desktop:/backup.tar.gz,0,7,desktop:/data.tar.gz,0,8,desktop:/food_rescue_search.txt,0,9,desktop:/log.out,0,10,desktop:/matrix-forward.sh,0,11,desktop:/passwords.kdbx,0,12,desktop:/push-forward.sh,0,13,desktop:/shush.sh,0,14,desktop:/sound-fix.sh,0,15
+positions=1,17,desktop:/push-forward.sh,0,10,desktop:/shush.sh,0,11,desktop:/backup.tar.gz,0,4,desktop:/data.tar.gz,0,5,desktop:/food_rescue_search.txt,0,6,desktop:/log.out,0,7,desktop:/csgo,0,0,desktop:/50-headset.rules,0,1,desktop:/anbox-setup.sh,0,2,desktop:/audio-forward.sh,0,3,desktop:/sound-fix.sh,0,12,desktop:/venji10.txt,0,13,desktop:/dns.txt,0,14,desktop:/matrix-forward.sh,0,8,desktop:/passwords.kdbx,0,9
 sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
@@ -143,7 +143,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][51][Applets][56][Configuration]
-PreloadWeight=52
+PreloadWeight=29
 SystrayContainmentId=57
 
 [Containments][51][Applets][65]
@@ -166,7 +166,7 @@ plugin=org.kde.plasma.taskmanager
 PreloadWeight=0
 
 [Containments][51][Applets][70][Configuration][General]
-launchers=applications:firefox-developer-edition.desktop,applications:org.kde.konsole.desktop
+launchers=applications:org.kde.konsole.desktop
 
 [Containments][51][Applets][79]
 immutability=1
@@ -188,7 +188,7 @@ immutability=1
 plugin=org.kde.plasma.systemmonitor
 
 [Containments][51][Applets][81][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][51][Applets][81][Configuration][Appearance]
 chartFace=org.kde.ksysguard.piechart
@@ -232,7 +232,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][57][Applets][59][Configuration]
-PreloadWeight=52
+PreloadWeight=0
 
 [Containments][57][Applets][61]
 immutability=1
@@ -246,14 +246,14 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][57][Applets][63][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][57][Applets][64]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][57][Applets][64][Configuration]
-PreloadWeight=0
+PreloadWeight=9
 
 [Containments][57][Applets][67]
 immutability=1
@@ -365,7 +365,7 @@ immutability=1
 plugin=org.kde.plasma.keyboardlayout
 
 [Containments][8][Applets][72][Configuration]
-PreloadWeight=18
+PreloadWeight=0
 
 [Containments][8][Applets][9]
 immutability=1

@@ -1,5 +1,7 @@
 mode: system
 exclude_files:
+  - /etc/adjtime
+  - /etc/brlapi.key
   - /etc/.pwd.lock
   - /etc/NetworkManager/system-connections/
   - /etc/cifs-utils/
@@ -34,12 +36,11 @@ exclude_files:
   - /etc/xml/
   - /etc/rancher/
 files:
-  /etc/systemd/user/pipewire.service.wants/pipewire-media-session.service: 0:0:777
-  /etc/systemd/user/sockets.target.wants/pipewire-pulse.socket: 0:0:777
   /etc/default/cpupower: 0:0:644
   /etc/default/grub: 0:0:644
   /etc/default/keyboard: 0:0:644
   /etc/default/locale: 0:0:644
+  /etc/default/rcS: 0:0:644
   /etc/fwupd/remotes.d/lvfs-testing.conf: 0:0:644
   /etc/fwupd/remotes.d/vendor-directory.conf: 0:0:644
   /etc/locale.conf: 0:0:644
@@ -48,6 +49,7 @@ files:
   /etc/mkinitcpio.conf: 0:0:644
   /etc/mkinitcpio.d/linux-xanmod-anbox.preset: 0:0:644
   /etc/modprobe.d/nobeep.conf: 0:0:644
+  /etc/modules-load.d/anbox.conf: 0:0:644
   /etc/modules-load.d/cpufreq.conf: 0:0:644
   /etc/named.conf: 0:40:640
   /etc/NetworkManager/conf.d/dns.conf: 0:0:644
@@ -67,6 +69,7 @@ files:
   /etc/systemd/system/dbus-org.freedesktop.timesync1.service: 0:0:777
   /etc/systemd/system/display-manager.service: 0:0:777
   /etc/systemd/system/getty.target.wants/getty@tty1.service: 0:0:777
+  /etc/systemd/system/multi-user.target.wants/anbox-container-manager.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/apparmor.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/cpupower.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/cronie.service: 0:0:777
@@ -92,12 +95,14 @@ files:
   /etc/systemd/system/timers.target.wants/fstrim.timer: 0:0:777
   /etc/systemd/system/timers.target.wants/logrotate.timer: 0:0:777
   /etc/systemd/user/default.target.wants/xdg-user-dirs-update.service: 0:0:777
+  /etc/systemd/user/pipewire.service.wants/pipewire-media-session.service: 0:0:777
   /etc/systemd/user/sockets.target.wants/dirmngr.socket: 0:0:777
   /etc/systemd/user/sockets.target.wants/gpg-agent-browser.socket: 0:0:777
   /etc/systemd/user/sockets.target.wants/gpg-agent-extra.socket: 0:0:777
   /etc/systemd/user/sockets.target.wants/gpg-agent-ssh.socket: 0:0:777
   /etc/systemd/user/sockets.target.wants/gpg-agent.socket: 0:0:777
   /etc/systemd/user/sockets.target.wants/p11-kit-server.socket: 0:0:777
+  /etc/systemd/user/sockets.target.wants/pipewire-pulse.socket: 0:0:777
   /etc/systemd/user/sockets.target.wants/pipewire.socket: 0:0:777
   /etc/timezone: 0:0:644
   /etc/tmpfiles.d/anbox.conf: 0:0:644
@@ -105,17 +110,6 @@ files:
   /etc/X11/xorg.conf.d/00-keyboard.conf: 0:0:644
   /etc/X11/xorg.conf.d/20-amdgpu.conf: 0:0:644
 packages:
-  - apgdiff-git
-  - aria2
-  - bash-language-server
-  - cdrtools
-  - kate-git
-  - migrate
-  - ngrok-bin
-  - noisetorch-bin
-  - pgmodeler
-  - pipewire-pulse
-  - xournalpp
   - 1password-cli
   - aarch64-linux-gnu-gcc
   - aarch64-linux-gnu-pkg-config
@@ -132,11 +126,13 @@ packages:
   - android-tools
   - android-udev
   - ansible
+  - apgdiff-git
   - apparmor
   - appimagetool-continuous
   - arch-install-scripts
   - arduino
   - arduino-avr-core
+  - aria2
   - ark
   - arm-none-eabi-gcc
   - aspell-de
@@ -148,6 +144,7 @@ packages:
   - base
   - bash
   - bash-completion
+  - bash-language-server
   - bashtop
   - bind
   - binfmt-qemu-static-all-arch
@@ -161,6 +158,7 @@ packages:
   - buho
   - bzip2
   - ccache
+  - cdrtools
   - chromium
   - chrpath
   - clang-git
@@ -178,6 +176,7 @@ packages:
   - diffutils
   - discord-canary
   - discover
+  - distcc
   - dmidecode
   - docker
   - dolphin
@@ -187,7 +186,7 @@ packages:
   - dtc
   - edk2-ovmf
   - efibootmgr
-  - element-desktop-nightly-bin
+  - element-desktop
   - elisa
   - etcher-bin
   - f2fs-tools
@@ -257,6 +256,7 @@ packages:
   - k3s-bin
   - k9s
   - kactivitymanagerd
+  - kate-git
   - kcalc
   - kde-cli-tools
   - kde-gtk-config
@@ -310,12 +310,12 @@ packages:
   - llvm-git
   - llvm-libs-git
   - logrotate
-  - lxc
   - lzip
   - m4
   - make
   - mdbook
   - meson
+  - migrate
   - milou
   - mingw-w64-gcc
   - mkbootimg-git
@@ -332,8 +332,10 @@ packages:
   - neovim-git
   - net-tools
   - networkmanager
+  - ngrok-bin
   - nmap
   - nodejs
+  - noisetorch-bin
   - noto-fonts
   - noto-fonts-cjk
   - noto-fonts-emoji
@@ -353,9 +355,11 @@ packages:
   - patch
   - patchutils
   - pciutils
+  - pgmodeler
   - phoronix-test-suite
   - pigz
   - piper
+  - pipewire-pulse
   - pkgconf
   - plantuml
   - plasma-browser-integration
@@ -450,6 +454,7 @@ packages:
   - xorg-xfd
   - xorg-xinit
   - xorg-xkill
+  - xournalpp
   - xz
   - yarn
   - yay-bin

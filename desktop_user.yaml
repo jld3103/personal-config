@@ -17,7 +17,7 @@ exclude_files:
   - .config/discord*
   - .config/discoverrc
   - .config/drkonqirc
-  - .config/Element-Nightly/
+  - .config/Element*
   - .config/elisarc
   - .config/emaildefaults
   - .config/emailidentities
@@ -32,6 +32,7 @@ exclude_files:
   - .config/gtk*
   - .config/gwenviewrc
   - .config/heimdall-frontendrc
+  - .config/helm/
   - .config/heroic/
   - .config/imagewriterrc
   - .config/inkscape/
@@ -54,6 +55,7 @@ exclude_files:
   - .config/kgetrc
   - .config/khelpcenterrc
   - .config/kinfocenterrc
+  - .config/kioclientrc
   - .config/kioslaverc
   - .config/Kitware/
   - .config/klipperrc
@@ -139,8 +141,8 @@ content_filters:
 files:
   .bashrc: 1000:1000:644
   .config/autostart/discord-canary.desktop: 1000:1000:600
-  .config/autostart/element-desktop-nightly.desktop: 1000:1000:600
   .config/autostart/firefox-developer-edition.desktop: 1000:1000:600
+  .config/autostart/io.element.Element.desktop: 1000:1000:600
   .config/baloofilerc: 1000:1000:600
   .config/breezerc: 1000:1000:600
   .config/dolphinrc: 1000:1000:600

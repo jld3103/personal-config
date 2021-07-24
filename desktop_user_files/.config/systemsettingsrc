@@ -1,6 +1,8 @@
 [KFileDialog Settings]
 detailViewIconSize=16
 
+[KPropertiesDialog]
+
 [MainWindow]
 MenuBar=Disabled
 ToolBarsMovable=Disabled

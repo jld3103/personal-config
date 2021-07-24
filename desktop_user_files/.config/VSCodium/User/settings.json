@@ -1,5 +1,6 @@
 {
-    "editor.formatOnSave": true,
     "window.zoomLevel": 0.325,
-    "explorer.autoReveal": false
+    "editor.formatOnSave": true,
+    "explorer.autoReveal": false,
+    "files.insertFinalNewline": true
 }

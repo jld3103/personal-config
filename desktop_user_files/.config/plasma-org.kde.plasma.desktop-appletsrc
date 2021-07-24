@@ -28,7 +28,7 @@ PreloadWeight=0
 [Containments][1][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=577
-positions=1,17,desktop:/push-forward.sh,0,10,desktop:/shush.sh,0,11,desktop:/backup.tar.gz,0,4,desktop:/data.tar.gz,0,5,desktop:/food_rescue_search.txt,0,6,desktop:/log.out,0,7,desktop:/csgo,0,0,desktop:/50-headset.rules,0,1,desktop:/anbox-setup.sh,0,2,desktop:/audio-forward.sh,0,3,desktop:/sound-fix.sh,0,12,desktop:/venji10.txt,0,13,desktop:/dns.txt,0,14,desktop:/matrix-forward.sh,0,8,desktop:/passwords.kdbx,0,9
+positions=1,17,desktop:/passwords.kdbx,0,4,desktop:/anbox-setup.sh,0,1,desktop:/csgo,0,0,desktop:/matrix-forward.sh,0,3,desktop:/audio-forward.sh,0,2,desktop:/sound-fix.sh,0,5
 sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
@@ -143,7 +143,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][51][Applets][56][Configuration]
-PreloadWeight=29
+PreloadWeight=42
 SystrayContainmentId=57
 
 [Containments][51][Applets][65]
@@ -158,6 +158,8 @@ dateFormat=isoDate
 showSeconds=true
 use24hFormat=2
 
+[Containments][51][Applets][65][Configuration][ConfigDialog]
+
 [Containments][51][Applets][70]
 immutability=1
 plugin=org.kde.plasma.taskmanager
@@ -166,29 +168,14 @@ plugin=org.kde.plasma.taskmanager
 PreloadWeight=0
 
 [Containments][51][Applets][70][Configuration][General]
-launchers=applications:org.kde.konsole.desktop
-
-[Containments][51][Applets][79]
-immutability=1
-plugin=org.kde.plasma.kickerdash
-
-[Containments][51][Applets][79][Configuration]
-PreloadWeight=0
-
-[Containments][51][Applets][79][Configuration][ConfigDialog]
-
-[Containments][51][Applets][79][Configuration][General]
-favoritesPortedToKAstats=true
-
-[Containments][51][Applets][79][Shortcuts]
-global=Meta+F1
+launchers=applications:org.kde.konsole.desktop,applications:firefox-developer-edition.desktop
 
 [Containments][51][Applets][81]
 immutability=1
 plugin=org.kde.plasma.systemmonitor
 
 [Containments][51][Applets][81][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][51][Applets][81][Configuration][Appearance]
 chartFace=org.kde.ksysguard.piechart
@@ -202,14 +189,24 @@ highPrioritySensorIds=["cpu/all/usage"]
 lowPrioritySensorIds=["cpu/all/processors","cpu/all/cores"]
 totalSensors=["cpu/all/usage"]
 
+[Containments][51][Applets][83]
+immutability=1
+plugin=org.kde.plasma.kicker
+
 [Containments][51][Applets][83][Configuration]
-PreloadWeight=76
+PreloadWeight=92
+
+[Containments][51][Applets][83][Configuration][General]
+favoritesPortedToKAstats=true
+
+[Containments][51][Applets][83][Shortcuts]
+global=Meta+F1
 
 [Containments][51][Configuration]
 PreloadWeight=0
 
 [Containments][51][General]
-AppletOrder=79;70;53;81;56;65
+AppletOrder=83;70;53;81;56;65
 
 [Containments][57]
 activityId=
@@ -232,7 +229,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][57][Applets][59][Configuration]
-PreloadWeight=0
+PreloadWeight=32
 
 [Containments][57][Applets][61]
 immutability=1
@@ -246,14 +243,14 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][57][Applets][63][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][57][Applets][64]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][57][Applets][64][Configuration]
-PreloadWeight=9
+PreloadWeight=0
 
 [Containments][57][Applets][67]
 immutability=1

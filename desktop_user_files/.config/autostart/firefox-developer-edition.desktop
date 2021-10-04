@@ -1,11 +1,9 @@
 [Desktop Action new-private-window]
 Exec=/usr/lib/firefox-developer-edition/firefox --private-window %u
-Name[en_US]=New Private Window
 Name=New Private Window
 
 [Desktop Action new-window]
 Exec=/usr/lib/firefox-developer-edition/firefox --new-window %u
-Name[en_US]=New Window
 Name=New Window
 
 [Desktop Entry]

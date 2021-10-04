@@ -1,0 +1,20 @@
+[Desktop Entry]
+Categories=Utility;Security;Qt;
+Comment=Community-driven port of the Windows application “KeePass Password Safe”
+Exec=source ~/.env.sh && keepassxc %f
+GenericName=Password Manager
+Icon=keepassxc
+MimeType=application/x-keepass2;
+Name=KeePassXC
+Path=
+StartupNotify=true
+StartupWMClass=keepassxc
+Terminal=false
+TerminalOptions=
+TryExec=keepassxc
+Type=Application
+Version=1.0
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

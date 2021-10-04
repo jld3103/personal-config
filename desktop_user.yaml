@@ -1,7 +1,6 @@
 mode: user
 exclude_files:
   - .config/*.code-workspace
-  - .config/aconfmgr/
   - .config/akregatorrc
   - .config/Android Open Source Project/
   - .config/arkrc
@@ -10,7 +9,9 @@ exclude_files:
   - .config/bashtop/
   - .config/bluedevilglobalrc
   - .config/cef_user_data/
+  - .config/Code - Insiders/
   - .config/configstore/
+  - .config/DataSkop/
   - .config/DB Browser for SQLiterc
   - .config/dconf/
   - .config/device_automounter_kcmrc
@@ -37,6 +38,7 @@ exclude_files:
   - .config/imagewriterrc
   - .config/inkscape/
   - .config/jgit/
+  - .config/k9s/
   - .config/kactivitymanagerd-statsrc
   - .config/kactivitymanagerd-switcher
   - .config/kactivitymanagerdrc
@@ -49,6 +51,7 @@ exclude_files:
   - .config/KDE/
   - .config/kdenlive-layoutsrc
   - .config/kdenliverc
+  - .config/keditfiletyperc
   - .config/KeePassXCrc
   - .config/kfontinstuirc
   - .config/kfontviewrc
@@ -64,7 +67,9 @@ exclude_files:
   - .config/ksmserverrc
   - .config/ksudokurc
   - .config/ksysguardrc
+  - .config/kupfer/
   - .config/kwalletrc
+  - .config/kwinrulesrc
   - .config/legendary/
   - .config/libaccounts-glib/
   - .config/libreoffice/
@@ -78,6 +83,7 @@ exclude_files:
   - .config/okularpartrc
   - .config/okularrc
   - .config/org.kde.gwenviewrc
+  - .config/pgmodeler/
   - .config/pipewire-media-session/
   - .config/pipewire/
   - .config/plasma-nm
@@ -98,19 +104,20 @@ exclude_files:
   - .config/spectaclerc
   - .config/spotify/
   - .config/sqlitebrowser/
+  - .config/systemmonitorrc
   - .config/TelegramDesktoprc
   - .config/torbrowser/
   - .config/trashrc
   - .config/Trolltech.conf
+  - .config/Unknown Organization/pgmodeler.conf
   - .config/VirtualBox/
   - .config/VirtualBoxrc
   - .config/VirtualBoxVMrc
   - .config/vlc/
-  - .config/VSCodium/
   - .config/wireshark/
   - .config/yarn/
+  - .config/yay/
   - .config/Yubico/
-  - .config/zoom*
   - .emulator_console_auth_token
   - .face*
   - .flutter*
@@ -140,11 +147,11 @@ content_filters:
   - .config/plasmashellrc: ColumnState.*
 files:
   .bashrc: 1000:1000:644
-  .config/autostart/discord-canary.desktop: 1000:1000:600
   .config/autostart/firefox-developer-edition.desktop: 1000:1000:600
-  .config/autostart/io.element.Element.desktop: 1000:1000:600
+  .config/autostart/org.keepassxc.KeePassXC.desktop: 1000:1000:600
   .config/baloofilerc: 1000:1000:600
   .config/breezerc: 1000:1000:600
+  .config/Code - Insiders/User/settings.json: 1000:1000:644
   .config/dolphinrc: 1000:1000:600
   .config/filetypesrc: 1000:1000:600
   .config/htop/htoprc: 1000:1000:644
@@ -172,8 +179,6 @@ files:
   .config/ktimezonedrc: 1000:1000:600
   .config/kwinrc: 1000:1000:600
   .config/kxkbrc: 1000:1000:600
-  .config/MangoHud/csgo_linux64.conf: 1000:1000:644
-  .config/MangoHud/MangoHud.conf: 1000:1000:644
   .config/mimeapps.list: 1000:1000:644
   .config/noisetorch/config.toml: 1000:1000:644
   .config/plasma-localerc: 1000:1000:600
@@ -183,11 +188,12 @@ files:
   .config/plasmashellrc: 1000:1000:600
   .config/powermanagementprofilesrc: 1000:1000:600
   .config/procps/toprc: 1000:1000:644
+  .config/systemd/user/default.target.wants/ssh-agent.service: 1000:1000:777
   .config/systemd/user/default.target.wants/yubikey-touch-detector.service: 1000:1000:777
+  .config/systemd/user/ssh-agent.service: 1000:1000:644
   .config/systemsettingsrc: 1000:1000:600
   .config/user-dirs.dirs: 1000:1000:600
   .config/user-dirs.locale: 1000:1000:644
-  .config/VSCodium/User/settings.json: 1000:1000:644
   .config/xdg-desktop-portal-kderc: 1000:1000:600
   .config/xsettingsd/xsettingsd.conf: 1000:1000:644
   .config/yubikey-touch-detector/service.conf: 1000:1000:644

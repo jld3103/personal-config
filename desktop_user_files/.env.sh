@@ -14,6 +14,7 @@ export PATH=$PATH:/opt/appimagetool/usr/bin
 export PATH=$PATH:$HOME/src/osxcross/target/bin
 export PATH=$PATH:$HOME/src/appimagetool/usr/bin
 export PATH=$PATH:/opt/dart-sdk-dev/bin/snapshots
+export PATH=$HOME/.local/bin:$PATH
 
 #export LC_NUMERIC="en_US.UTF-8"
 export PUB_CACHE=$HOME/.pub-cache
@@ -29,17 +30,13 @@ export LC_ALL=C
 
 export MAKEFLAGS="-j$(nproc)"
 
-export LOCAL_MIRROR=http://192.168.178.21:8080/\$repo/\$arch
-
-# XanMod AUR settings
-export _microarchitecture=14
-export use_numa=n
-export use_tracers=n
-export _localmodcfg=n
-
 export USE_CCACHE=1
 export CCACHE_COMPRESS=1
 
 export CHROME_EXECUTABLE=chromium
 
 export DOCKER_PULL_POLICY=if-not-present
+
+export PATH=$PATH:/home/jld3103/projects/kupfer/kupferbootstrap/bin
+
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"

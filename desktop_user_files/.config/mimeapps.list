@@ -8,7 +8,7 @@ application/x-extension-shtml=firefox-developer-edition.desktop;
 application/x-extension-xht=firefox-developer-edition.desktop;
 application/x-extension-xhtml=firefox-developer-edition.desktop;
 application/x-java-archive=java.desktop;
-application/x-raw-disk-image=gparted.desktop;
+application/x-raw-disk-image=gparted.desktop;org.kde.ark.desktop;
 application/x-trash=org.kde.kate.desktop;
 application/xhtml+xml=firefox-developer-edition.desktop;
 application/xml=org.kde.kate.desktop;
@@ -28,6 +28,7 @@ x-scheme-handler/http=firefox-developer-edition.desktop;
 x-scheme-handler/https=firefox-developer-edition.desktop;
 x-scheme-handler/mailto=userapp-Thunderbird-I4Y4X0.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-ZLWGW0.desktop;
+application/rss+xml=org.kde.kate.desktop;
 
 [Default Applications]
 application/json=org.kde.kate.desktop;
@@ -63,3 +64,6 @@ x-scheme-handler/sgnl=signal-desktop.desktop
 x-scheme-handler/signalcaptcha=signal.desktop
 x-scheme-handler/slack=slack.desktop
 x-scheme-handler/tg=userapp-Telegram Desktop-ZLWGW0.desktop
+
+[Removed Associations]
+application/x-raw-disk-image=imagewriter.desktop;

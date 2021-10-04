@@ -1,11 +1,19 @@
+[$Version]
+update_info=kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend
+
 [Compositing]
-OpenGLIsUnsafe=false
+OpenGLIsUnsafe=true
 
 [Desktops]
 Id_1=2b6a9c17-66ae-4887-bb11-5b63f521b7d2
 Id_2=bdee3dea-40b1-41bb-a561-0a1bbebe4236
 Number=2
 Rows=2
+
+[DrmOutputs][42fa52a1-d3e7-58ec-8c1c-a6dd48ef2003][42fa52a1-d3e7-58ec-8c1c-a6dd48ef2003]
+Mode=1920x1080_60000
+Scale=1
+Transform=normal
 
 [Plugins]
 minimizeallEnabled=false

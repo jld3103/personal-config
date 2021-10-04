@@ -1,0 +1,21 @@
+{
+    "editor.formatOnSave": true,
+    "explorer.autoReveal": false,
+    "files.insertFinalNewline": true,
+    "python.insidersChannel": "daily",
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "dart.flutterSdkPath": "/home/jld3103/flutter",
+    "cmake.configureOnOpen": false,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    }
+}

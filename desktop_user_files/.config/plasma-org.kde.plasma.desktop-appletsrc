@@ -28,8 +28,6 @@ PreloadWeight=0
 [Containments][1][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=577
-positions=1,17,desktop:/passwords.kdbx,0,4,desktop:/anbox-setup.sh,0,1,desktop:/csgo,0,0,desktop:/matrix-forward.sh,0,3,desktop:/audio-forward.sh,0,2,desktop:/sound-fix.sh,0,5
-sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
 Image=file:///usr/share/wallpapers/Next/contents/images/1920x1080.png
@@ -143,7 +141,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][51][Applets][56][Configuration]
-PreloadWeight=42
+PreloadWeight=0
 SystrayContainmentId=57
 
 [Containments][51][Applets][65]
@@ -168,7 +166,7 @@ plugin=org.kde.plasma.taskmanager
 PreloadWeight=0
 
 [Containments][51][Applets][70][Configuration][General]
-launchers=applications:org.kde.konsole.desktop,applications:firefox-developer-edition.desktop
+launchers=applications:visual-studio-code-insiders.desktop,applications:org.kde.konsole.desktop,applications:firefox-developer-edition.desktop
 
 [Containments][51][Applets][81]
 immutability=1
@@ -229,7 +227,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][57][Applets][59][Configuration]
-PreloadWeight=32
+PreloadWeight=0
 
 [Containments][57][Applets][61]
 immutability=1
@@ -277,12 +275,19 @@ PreloadWeight=0
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
+[Containments][57][Applets][84]
+immutability=1
+plugin=org.kde.plasma.manage-inputmethod
+
+[Containments][57][Applets][84][Configuration]
+PreloadWeight=0
+
 [Containments][57][Configuration]
 PreloadWeight=0
 
 [Containments][57][General]
-extraItems=org.kde.plasma.printmanager,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.bluetooth
-knownItems=org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.bluetooth
+extraItems=org.kde.plasma.printmanager,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.manage-inputmethod
+knownItems=org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.manage-inputmethod
 
 [Containments][8]
 activityId=
@@ -364,6 +369,13 @@ plugin=org.kde.plasma.keyboardlayout
 [Containments][8][Applets][72][Configuration]
 PreloadWeight=0
 
+[Containments][8][Applets][85]
+immutability=1
+plugin=org.kde.plasma.manage-inputmethod
+
+[Containments][8][Applets][85][Configuration]
+PreloadWeight=0
+
 [Containments][8][Applets][9]
 immutability=1
 plugin=org.kde.plasma.printmanager
@@ -375,8 +387,8 @@ PreloadWeight=0
 PreloadWeight=0
 
 [Containments][8][General]
-extraItems=org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.bluetooth
-knownItems=org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.bluetooth
+extraItems=org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.manage-inputmethod
+knownItems=org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.notifications,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.manage-inputmethod
 
 [Containments51Appletsts][81][Configuration][Appearance]
 title=Total CPU Use

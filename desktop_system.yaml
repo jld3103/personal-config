@@ -1,16 +1,14 @@
 mode: system
 exclude_files:
+  - /etc/.pwd.lock
   - /etc/adjtime
   - /etc/brlapi.key
-  - /etc/.pwd.lock
-  - /etc/NetworkManager/system-connections/
   - /etc/cifs-utils/
   - /etc/conf.d/lm_sensors
   - /etc/crypttab
   - /etc/cups/
   - /etc/dconf/
   - /etc/docker/
-  - /etc/dpkg/
   - /etc/fonts/conf.d/
   - /etc/fstab
   - /etc/group*
@@ -26,15 +24,17 @@ exclude_files:
   - /etc/machine-id
   - /etc/mtab
   - /etc/multipath/
+  - /etc/NetworkManager/system-connections/
   - /etc/nvme/
   - /etc/os-release
   - /etc/passwd*
   - /etc/printcap
+  - /etc/rancher/
   - /etc/shadow*
   - /etc/shells
   - /etc/texmf/
+  - /etc/wireguard/
   - /etc/xml/
-  - /etc/rancher/
 files:
   /etc/default/cpupower: 0:0:644
   /etc/default/grub: 0:0:644
@@ -47,9 +47,7 @@ files:
   /etc/logrotate.conf: 0:0:644
   /etc/makepkg.conf: 0:0:644
   /etc/mkinitcpio.conf: 0:0:644
-  /etc/mkinitcpio.d/linux-xanmod-anbox.preset: 0:0:644
   /etc/modprobe.d/nobeep.conf: 0:0:644
-  /etc/modules-load.d/anbox.conf: 0:0:644
   /etc/modules-load.d/cpufreq.conf: 0:0:644
   /etc/named.conf: 0:40:640
   /etc/NetworkManager/conf.d/dns.conf: 0:0:644
@@ -69,7 +67,6 @@ files:
   /etc/systemd/system/dbus-org.freedesktop.timesync1.service: 0:0:777
   /etc/systemd/system/display-manager.service: 0:0:777
   /etc/systemd/system/getty.target.wants/getty@tty1.service: 0:0:777
-  /etc/systemd/system/multi-user.target.wants/anbox-container-manager.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/apparmor.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/cpupower.service: 0:0:777
   /etc/systemd/system/multi-user.target.wants/cronie.service: 0:0:777
@@ -102,33 +99,51 @@ files:
   /etc/systemd/user/sockets.target.wants/gpg-agent-ssh.socket: 0:0:777
   /etc/systemd/user/sockets.target.wants/gpg-agent.socket: 0:0:777
   /etc/systemd/user/sockets.target.wants/p11-kit-server.socket: 0:0:777
-  /etc/systemd/user/sockets.target.wants/pipewire-pulse.socket: 0:0:777
   /etc/systemd/user/sockets.target.wants/pipewire.socket: 0:0:777
   /etc/timezone: 0:0:644
-  /etc/tmpfiles.d/anbox.conf: 0:0:644
   /etc/vconsole.conf: 0:0:644
   /etc/X11/xorg.conf.d/00-keyboard.conf: 0:0:644
   /etc/X11/xorg.conf.d/20-amdgpu.conf: 0:0:644
+  /etc/systemd/user/sockets.target.wants/pulseaudio.socket: 0:0:777
+  /etc/mkinitcpio.d/linux.preset: 0:0:644
 packages:
+  - alsa-card-profiles
+  - discord
+  - gnome-desktop
+  - gnome-keyring
+  - jpegoptim
+  - jsonnet
+  - kate
+  - linux
+  - linux-headers
+  - lxc
+  - man-db
+  - maven
+  - mkinitcpio
+  - mkinitcpio-busybox
+  - multimc-bin
+  - mutter
+  - optipng
+  - pahole
+  - pipewire
+  - pulseaudio
+  - python-docutils
+  - skaffold-bin
+  - swig
+  - visual-studio-code-insiders-bin
   - 1password-cli
   - aarch64-linux-gnu-gcc
   - aarch64-linux-gnu-pkg-config
-  - abootimg-git
-  - aconfmgr-git
   - acpi
   - acpi_call-dkms
   - act-bin
-  - airshipper
   - alsa-utils
   - amd-ucode
-  - anbox-git
-  - anbox-image-gapps-rooted
   - android-tools
   - android-udev
   - ansible
   - apgdiff-git
   - apparmor
-  - appimagetool-continuous
   - arch-install-scripts
   - arduino
   - arduino-avr-core
@@ -155,12 +170,9 @@ packages:
   - breeze
   - breeze-grub
   - breeze-gtk
-  - buho
   - bzip2
   - ccache
-  - cdrtools
   - chromium
-  - chrpath
   - clang-git
   - cmake
   - compiler-rt-git
@@ -174,32 +186,25 @@ packages:
   - dhcpcd
   - diffstat
   - diffutils
-  - discord-canary
-  - discover
   - distcc
   - dmidecode
   - docker
   - dolphin
   - dolphin-plugins
-  - dpkg
   - drkonqi
   - dtc
   - edk2-ovmf
   - efibootmgr
   - element-desktop
-  - elisa
-  - etcher-bin
   - f2fs-tools
   - fakeroot
   - file
   - filesystem
-  - filezilla
   - findutils
   - firefox-developer-edition
   - flex
   - fuseiso
   - fwupd
-  - gamemode
   - gawk
   - gcc
   - gdb
@@ -209,14 +214,10 @@ packages:
   - github-cli
   - gitlab-runner
   - glibc
-  - gnome-characters
-  - gnome-desktop
-  - gnome-keyring
   - gnu-netcat
   - gnuplot
   - go
   - google-cloud-sdk
-  - google-earth-pro
   - gparted
   - grep
   - groff
@@ -233,7 +234,6 @@ packages:
   - gzip
   - helm
   - help2man
-  - heroic-games-launcher-bin
   - html-xml-utils
   - htop
   - hunspell-de
@@ -253,10 +253,8 @@ packages:
   - jq
   - jre8-openjdk
   - jre8-openjdk-headless
-  - k3s-bin
   - k9s
   - kactivitymanagerd
-  - kate-git
   - kcalc
   - kde-cli-tools
   - kde-gtk-config
@@ -285,13 +283,6 @@ packages:
   - kwin
   - kwrited
   - less
-  - lib32-gamemode
-  - lib32-libdrm-git
-  - lib32-llvm-git
-  - lib32-llvm-libs-git
-  - lib32-mesa-git
-  - lib32-vkd3d
-  - lib32-vulkan-radeon-git
   - libavresample
   - libdrm-git
   - libdwarf
@@ -305,8 +296,6 @@ packages:
   - libva-vdpau-driver
   - libxnvctrl
   - linux-firmware
-  - linux-xanmod-anbox
-  - linux-xanmod-anbox-headers
   - llvm-git
   - llvm-libs-git
   - logrotate
@@ -321,21 +310,15 @@ packages:
   - mkbootimg-git
   - mp3info
   - mpv
-  - msitools
   - mtools
   - mtr
-  - multimc5
-  - mysql-workbench
   - nano
   - ncurses5-compat-libs
   - neofetch
-  - neovim-git
   - net-tools
   - networkmanager
   - ngrok-bin
   - nmap
-  - nodejs
-  - noisetorch-bin
   - noto-fonts
   - noto-fonts-cjk
   - noto-fonts-emoji
@@ -356,10 +339,8 @@ packages:
   - patchutils
   - pciutils
   - pgmodeler
-  - phoronix-test-suite
   - pigz
   - piper
-  - pipewire-pulse
   - pkgconf
   - plantuml
   - plasma-browser-integration
@@ -388,30 +369,20 @@ packages:
   - qemu
   - qemu-arch-extra
   - qemu-user-static-bin
-  - rpcsvc-proto
-  - rpm-tools
   - rsync
-  - samba
-  - scrcpy-git
   - sddm
   - sddm-kcm
   - sed
   - signal-desktop
-  - skaffold
   - slack-desktop
   - spectacle
   - spotify
-  - sqlitebrowser
   - squashfs-tools
   - sshfs
-  - steam
-  - steam-native-runtime
   - sudo
-  - swig
   - system-config-printer
   - systemsettings
   - tar
-  - tcpdump
   - telegram-desktop
   - terminus-font
   - terraform
@@ -421,7 +392,6 @@ packages:
   - thunderbird
   - thunderbird-i18n-de
   - thunderbird-i18n-en-us
-  - tigervnc
   - tree
   - ttf-liberation
   - uboot-tools
@@ -436,12 +406,10 @@ packages:
   - virtualbox-host-dkms
   - vkd3d
   - vlc
-  - vscodium-bin
   - vulkan-radeon-git
   - wget
   - which
-  - wine
-  - wireshark-qt
+  - wireguard-tools
   - xclip
   - xdg-desktop-portal
   - xdg-desktop-portal-kde
@@ -465,4 +433,3 @@ packages:
   - yubikey-personalization-gui
   - yubikey-touch-detector
   - zip
-  - zoom

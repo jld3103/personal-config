@@ -11,5 +11,6 @@ embed-image/jpeg=false
 embed-image/png=false
 embed-image/svg+xml=false
 embed-image/x-portable-pixmap=false
+embed-text/markdown=false
 embed-text/x-patch=false
 embed-x-scheme-handler/http=false

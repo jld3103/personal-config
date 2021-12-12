@@ -348,7 +348,7 @@ _launch=Meta+E,Meta+E,Dolphin
 [org.kde.krunner.desktop]
 RunClipboard=none,Alt+Shift+F2,Run command on clipboard contents
 _k_friendly_name=KRunner
-_launch=none,none,KRunner
+_launch=Alt+Space,none,KRunner
 
 [org.kde.plasma.emojier.desktop]
 _k_friendly_name=Emoji Selector
@@ -400,7 +400,6 @@ activate widget 42=,none,Activate Application Launcher Widget
 activate widget 46=none,none,Activate Task Manager Widget
 activate widget 48=,none,Activate Application Dashboard Widget
 activate widget 70=none,none,Activate Task Manager Widget
-activate widget 81=none,none,Activate Task Manager Widget
 activate widget 83=Meta+F1,none,Activate Application Menu Widget
 activate widget 87=,none,Activate Application Dashboard Widget
 activate widget 94=none,none,Activate Split Digital Clock Widget
@@ -408,14 +407,14 @@ clear-history=none,none,Clear Clipboard History
 clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Enable Clipboard Actions
 cycleNextAction=none,none,Next History Item
 cyclePrevAction=none,none,Previous History Item
-edit_clipboard=none,none,Edit Contents...
+edit_clipboard=none,none,Edit Contents…
 manage activities=Meta+Q,Meta+Q,Show Activity Switcher
 next activity=Meta+Tab,Meta+Tab,Walk through activities
 previous activity=Meta+Shift+Tab,Meta+Shift+Tab,Walk through activities (Reverse)
 repeat_action=Ctrl+Alt+R,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard
 show dashboard=Ctrl+F12,Ctrl+F12,Show Desktop
-show-barcode=none,none,Show Barcode...
-show-on-mouse-pos=none,none,Open Klipper at Mouse Position
+show-barcode=none,none,Show Barcode…
+show-on-mouse-pos=none,Meta+V,Open Klipper at Mouse Position
 stop current activity=Meta+S,Meta+S,Stop Current Activity
 switch to next activity=none,none,Switch to Next Activity
 switch to previous activity=none,none,Switch to Previous Activity

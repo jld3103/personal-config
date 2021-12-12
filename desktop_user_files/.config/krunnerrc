@@ -1,6 +1,3 @@
-[General]
-FreeFloating=true
-
 [PlasmaRunnerManager]
 migrated=true
 
@@ -20,8 +17,10 @@ desktopsessionsEnabled=true
 katesessionsEnabled=true
 konsoleprofilesEnabled=true
 krunner_appstreamEnabled=true
+krunner_systemsettingsEnabled=true
 kwinEnabled=true
 locationsEnabled=true
+org.kde.activities2Enabled=true
 org.kde.activitiesEnabled=true
 org.kde.datetimeEnabled=true
 org.kde.windowedwidgetsEnabled=true

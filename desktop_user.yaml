@@ -132,6 +132,7 @@ exclude_files:
   - .yarnrc
 content_filters:
   - .config/*: History.*
+  - .config/*: DirHistory.*
   - .config/*rc: DisplayPort.*
   - .config/*rc: HDMI.*
   - .config/*rc: Recent Files.*
@@ -145,6 +146,7 @@ content_filters:
   - .config/plasmanotifyrc: Until.*
   - .config/plasmanotifyrc: \[Applications\].*
   - .config/plasmashellrc: ColumnState.*
+  - .gitconfig: .*smtp.*
 files:
   .bashrc: 1000:1000:644
   .config/autostart/firefox-developer-edition.desktop: 1000:1000:600

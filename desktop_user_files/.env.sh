@@ -1,5 +1,6 @@
 export PATH=$PATH:$HOME/flutter/bin
 export ANDROID_HOME=$HOME/Android/Sdk
+export ANDROID_SDK_ROOT=$ANDROID_HOME
 export ANDROID_NDK_HOME=$ANDROID_HOME/ndk/21.3.6528147/
 export ANDROID_NDK=$ANDROID_NDK_HOME
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator

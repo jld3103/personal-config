@@ -13,7 +13,6 @@ FontWeight=50
 PreviewSize=22
 
 [ExtractDialog]
-DirHistory[$e]=$HOME/Downloads/
 
 [Favorite Profiles]
 Favorites=
@@ -32,7 +31,6 @@ detailViewIconSize=16
 
 [MainWindow]
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAwAAAAAAAADCAAACbfwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAuAAABhQAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAuAAACbQAAAF0BAAADAAAAAQAAALAAAAMK/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAC4AAAMKAAAACgEAAAMAAAADAAADkQAAAL78AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAAAAADkQAAAAoBAAADAAADYQAAAm0AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
 X11-1 Window-Maximized 1920x1015=true
 X11-1 Window-Maximized 360x760=true
@@ -43,5 +41,4 @@ CompletionMode=1
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mltpreview,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,textthumbnail,ffmpegthumbs
 
-[Search]
-What=Content
+[SettingsDialog]

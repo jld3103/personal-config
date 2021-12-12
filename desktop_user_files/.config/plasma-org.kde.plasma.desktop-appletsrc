@@ -29,9 +29,15 @@ PreloadWeight=0
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=577
 
+[Containments][1][Wallpaper][org.kde.color][General]
+Color=255,0,187
+
 [Containments][1][Wallpaper][org.kde.image][General]
 Image=file:///usr/share/wallpapers/Next/contents/images/1920x1080.png
 SlidePaths=/home/jld3103/.local/share/wallpapers,/usr/share/wallpapers
+
+[Containments][1][Wallpaper][org.kde.potd][General]
+FillMode=2
 
 [Containments][2]
 activityId=
@@ -166,33 +172,14 @@ plugin=org.kde.plasma.taskmanager
 PreloadWeight=0
 
 [Containments][51][Applets][70][Configuration][General]
-launchers=applications:visual-studio-code-insiders.desktop,applications:org.kde.konsole.desktop,applications:firefox-developer-edition.desktop
-
-[Containments][51][Applets][81]
-immutability=1
-plugin=org.kde.plasma.systemmonitor
-
-[Containments][51][Applets][81][Configuration]
-PreloadWeight=0
-
-[Containments][51][Applets][81][Configuration][Appearance]
-chartFace=org.kde.ksysguard.piechart
-title=Total CPU Use
-
-[Containments][51][Applets][81][Configuration][SensorColors]
-cpu/all/usage=61,174,233
-
-[Containments][51][Applets][81][Configuration][Sensors]
-highPrioritySensorIds=["cpu/all/usage"]
-lowPrioritySensorIds=["cpu/all/processors","cpu/all/cores"]
-totalSensors=["cpu/all/usage"]
+launchers=applications:firefox.desktop,applications:jetbrains-idea.desktop,applications:org.kde.konsole.desktop
 
 [Containments][51][Applets][83]
 immutability=1
 plugin=org.kde.plasma.kicker
 
 [Containments][51][Applets][83][Configuration]
-PreloadWeight=92
+PreloadWeight=91
 
 [Containments][51][Applets][83][Configuration][General]
 favoritesPortedToKAstats=true
@@ -200,11 +187,32 @@ favoritesPortedToKAstats=true
 [Containments][51][Applets][83][Shortcuts]
 global=Meta+F1
 
+[Containments][51][Applets][86]
+immutability=1
+plugin=org.kde.plasma.systemmonitor
+
+[Containments][51][Applets][86][Configuration]
+PreloadWeight=0
+
+[Containments][51][Applets][86][Configuration][Appearance]
+chartFace=org.kde.ksysguard.piechart
+title=Total CPU Use
+
+[Containments][51][Applets][86][Configuration][SensorColors]
+cpu/all/usage=109,41,80
+
+[Containments][51][Applets][86][Configuration][Sensors]
+highPrioritySensorIds=["cpu/all/usage"]
+lowPrioritySensorIds=["cpu/all/cpuCount","cpu/all/coreCount"]
+totalSensors=["cpu/all/usage"]
+
+[Containments][51][ConfigDialog]
+
 [Containments][51][Configuration]
 PreloadWeight=0
 
 [Containments][51][General]
-AppletOrder=83;70;53;81;56;65
+AppletOrder=83;70;53;86;56;65
 
 [Containments][57]
 activityId=
@@ -275,12 +283,20 @@ PreloadWeight=0
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
+[Containments][57][Applets][73][Configuration]
+PreloadWeight=52
+
 [Containments][57][Applets][84]
 immutability=1
 plugin=org.kde.plasma.manage-inputmethod
 
 [Containments][57][Applets][84][Configuration]
 PreloadWeight=0
+
+[Containments][57][Applets][87][Configuration]
+PreloadWeight=42
+
+[Containments][57][ConfigDialog]
 
 [Containments][57][Configuration]
 PreloadWeight=0
@@ -374,6 +390,13 @@ immutability=1
 plugin=org.kde.plasma.manage-inputmethod
 
 [Containments][8][Applets][85][Configuration]
+PreloadWeight=0
+
+[Containments][8][Applets][87]
+immutability=1
+plugin=org.kde.plasma.bluetooth
+
+[Containments][8][Applets][87][Configuration]
 PreloadWeight=0
 
 [Containments][8][Applets][9]

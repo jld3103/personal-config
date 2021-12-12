@@ -1106,6 +1106,10 @@ camera[$d]
 file[$d]
 fonts[$d]
 
+[QtQuickRendererSettings]
+RenderLoop[$d]
+SceneGraphBackend[$d]
+
 [Voice]
 Shortcut=
 

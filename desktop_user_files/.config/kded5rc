@@ -8,7 +8,7 @@ autoload=true
 autoload=false
 
 [Module-browserintegrationreminder]
-autoload=true
+autoload=false
 
 [Module-colorcorrectlocationupdater]
 autoload=true
@@ -68,4 +68,4 @@ autoload=true
 autoload=false
 
 [PlasmaBrowserIntegration]
-shownCount=1
+shownCount=2
